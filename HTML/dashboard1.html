@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Dashboard111111111111</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/dashboardStyle1.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      function openNav(){
+          var x = document.getElementById("d-sidebar");
+          if (x.style.display=="block"){
+              x.style.display="none";}
+          else{
+              x.style.display = "block";
+          }
+      }
+  </script>
+
+  </head>
+
+
+  <body>
+    
+  <div class="container-fluid main">
+    <nav class="navbar fixed-top navbar-light bg-light navbar-expand-lg">
+      <div class="container-fluid topnav ">
+
+        <button type="button" onclick="openNav()" class="menubar">
+          <img src="./images/menu-bar.svg" alt="menu-bar">
+        </button>
+        <!-- <a href="#"><img src="./images/menu-bar.svg" id="mySidebar" class="sidebar"></a> -->
+        
+        
+        <img id="logo" src="./images/header-logo.svg">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+        </span>
+        
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <form class="d-flex ms-3" role="search">
+        <i class="bi bi-search my-auto"></i>
+        <input class="form-control me-2 ms-3 border-0 " style="width: 55vw; background-color: white;"
+        type="search" placeholder="Search" aria-label="Search">
+        
+        </form>
+        </ul>
+        <div class="d-flex">
+        <i class="bi bi-bell my-auto"></i>
+        <img src="./images/profile.png" class="ms-3">
+        
+        
+        <div class="dropdown-center my-auto">
+        <a class="nav-link dropdown-toggle ms-1 me-5 profile" href="#" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        John Doe
+        </a>
+        
+        
+        </div>
+        
+        </div>
+        </div>
+        </div>
+      <!-- <div class=" container-fluid topnav" id="myTopnav">
+        
+        
+            <div>
+              <button type="button" onclick="openNav()" class="menubar">
+                <img src="./images/menu-bar.svg" alt="menu-bar">
+              </button>
+              
+              <img id="logo" src="./images/logo.svg" />
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+            
+            
+            <div class="search"> 
+              <img id="search" src="./images/search-icon.svg" />
+              <input type="text" placeholder="Search">
+            </div>
+            
+
+            <div class="user">
+              
+              <img id="notification" src="./images/notification-icon.svg" />
+              <img id="profile" src="./images/profile.png" /> John Doe
+              <img id="downArrow" src="./images/downward-arrow.svg" />
+            </div>
+            
+            
+              
+      </div> -->
+    </nav>
+
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+      
+      <div class="row mainContent">
+        
+          <div class="col-lg-2  nav1" id="d-sidebar">
+
+              <!-- <div class="row dashboardContainer">
+                <div class="col-3"><img id="dashboard" src="./images/dashboard-active.svg" alt="" /></div>
+                <div class="col"> <b id="active">Dashboard</b></div> 
+              </div>
+              <div class="row dashboardContainer">
+                <div class="col-3"><img id="dashboard" src="./images/dashboard-active.svg" alt="" /></div>
+                <div class="col"> <b id="active">Dashboard</b></div> 
+              </div> -->
+
+              <div class="row">
+                <div class="dashboardContainer">
+                  <img id="dashboard" src="./images/dashboard-active.svg" alt="" />
+                  <b id="active">Dashboard</b>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="anaContainer">
+                  <img id="analysis" src="./images/graph-default.svg" alt="" />
+                  <b>Analysis</b>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="indContainer">
+                  <img id="index" src="./images/inbox-default.svg" alt="" />
+                  <b>Inbox</b>
+                </div>
+              </div>
+              
+
+
+              <div class="row">
+                <div class="hisContainer">
+                  <img id="history" src="./images/clock-default.svg" alt="" />
+                  <b>History</b>
+                </div>
+              </div>
+              
+
+              <div class="row">
+                <div class="userContainer">
+                  <img id="user" src="./images/user-default.svg" alt="" />
+                  <b>Users</b>
+                </div>
+              </div>
+              
+
+
+              <div class="row">
+                <div class="maintainContainer">
+                  <img id="maintanance" src="./images/maintenance-default.svg" alt="" />
+                  <b>Maintenance</b>
+                </div>
+              </div>
+              
+
+              <div class="row">
+                <div class="settingsContainer">
+                  <img id="settings" src="./images/setting-default.svg" alt="" />
+                  <b>Setting</b>
+                </div>
+              </div>
+              
+
+          </div>
+        
+
+
+        <div class="col-lg-10 cont">
+        
+            <div class="row">
+                <p id="db">Dashboard</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5  squre">
+                    <img src="./images/star.svg" alt="" id="dashboardImg" />
+                    <p id="headd">23,456<br /> <span id="subheadd" >New Products</span></p>   
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5  squre">
+                <img src="./images/new-product.svg" alt="" id="dashboardImg" />
+                <p id="headd">23,45<br /> <span id="subheadd" >Added Products</span></p>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5 squre">
+                <img src="./images/total-product.svg" alt="" id="dashboardImg" />
+                <p id="headd">32,456<br /> <span id="subheadd" >Total Products</span></p>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5 squre">
+                <img src="./images/dollar-filled.svg" alt="" id="dashboardImg" />
+                <p id="headd">5678<br /> <span id="subheadd" >Today's Sale</span></p>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5 squre">
+                <img src="./images/money-bag.svg" alt="" id="dashboardImg" />
+                <p id="headd">33,5342<br /> <span id="subheadd" >Total Sale</span></p>
+                </div>
+
+            </div>
+
+            <div class="row justify-content-between data">
+              <div class="col-lg-7 col-md-7 col-sm-12 dataGraph">
+
+                <div class="row justify-content-between end">
+                  
+                  <p class="col-4" id="sale">Sale</p>
+                  <p class="col-1" id="weekly">Weekly</p>
+                  <p class="col-1" id="monthly">Monthly</p>
+                  <p class="col-1 selected" id="yearly">Yearly</p>
+                    
+                  
+                </div>
+                
+                <div class="row">
+                  <img src="./images/data-graph.png" alt="" />
+                </div>
+
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-12 chart">
+
+                <div class="row">
+                    <p id="sale">Sales by Country</p>
+                </div>
+
+                <div class="row piechart">
+                  <img src="./images/pie-chart.svg" alt="" />
+                </div>
+                
+
+                <div class="row piedata">
+
+                  <div class="row justify-content-between">
+                    <div class="col-1 red"></div>
+                    <div class="col">United States of America</div>
+                    <div class="col-1 yellow"></div>
+                    <div class="col">Canada</div>
+                  </div>
+                  <div class="row justify-content-between">
+                    <div class="col-1 orange"></div>
+                    <div class="col">Russia</div>
+                    <div class="col-1 green"></div>
+                    <div class="col">India</div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+        <!-- container p-5 bg-light -->
+            <div class="row invoicecontainer">
+              <div class="row">
+                <h4 class="col-10"><b>Invoices</b></h4>
+                <input class="col-2" type="submit" name="view" id="view" value="View all" />
+              </div>
+
+              <div style="overflow-x: auto;">
+              
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <!-- <th scope="col">index</th> -->
+                      <th scope="col" >INVOICE</th>
+                      <th scope="col" >COMPANY NAME</th>
+                      <th scope="col" >EMAIL</th>
+                      <th scope="col" >DUE DATE</th>
+                      <th scope="col" >STATUS</th>
+                      <th scope="col" >AMOUNT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <!-- <th scope="row"></th> -->
+                      <td>651535</td>
+                      <td>Public Adujusting Firm</td>
+                      <td>georgia.young@example.com</td>
+                      <td>24 May, 2020</td>
+                      <td><p class="text-center paid">Paid</p></td>
+                      <td>$47,800</td>
+                    </tr>
+                    <tr>
+                      <!-- <th scope="row"></th> -->
+                      <td>558612</td>
+                      <td>Other</td>
+                      <td>jessica.hanson@example.com</td>
+                      <td>24 May, 2020</td>
+                      <td><p class="text-center paid">Paid</p></td>
+                      <td>$98,000</td>
+                    </tr>
+                    <tr>
+                      <!-- <th scope="row"></th> -->
+                      <td>558612</td>
+                      <td>Vendor</td>
+                      <td>alma.lawson@example.com</td>
+                      <td>8 Sep, 2020</td>
+                      <td><p class="text-center paid">Paid</p></td>
+                      <td>$20,900</td>
+                    </tr>
+                    <tr>
+                      <!-- <th scope="row"></th> -->
+                      <td>558612</td>
+                      <td>Property Management Company</td>
+                      <td>kenzi.lawson@example.com</td>
+                      <td>22 Oct, 2020</td>
+                      <td><p class="text-center paid">Paid</p></td>
+                      <td>$10,570</td>
+                    </tr>
+                    <tr>
+                      <!-- <th scope="row"></th> -->
+                      <td>651535</td>
+                      <td>Subcontractor Company</td>
+                      <td>jackson.graham@example.com</td>
+                      <td>1 Feb, 2020</td>
+                      <td><p class="text-center fail">Failed</p></td>                     
+                      <td>$10,200</td>
+                    </tr>
+                    <tr>
+                      <!-- <th scope="row"></th> -->
+                      <td>653518</td>
+                      <td>Mortgage Company</td>
+                      <td>felicia.reid@example.com</td>
+                      <td>22 Oct, 2020</td>
+                      <td><p class="text-center pending">Pending</p></td>
+                      <td>$12,600</td>
+                    </tr>
+                    <tr>
+                      <!-- <th scope="row"></th> -->
+                      <td>487441</td>
+                      <td>TPA</td>
+                      <td>dolores.chambers@example.com</td>
+                      <td>21 Sep, 2020</td>
+                      <td><p class="text-center paid">Paid</p></td>
+                      <td>$11,170</td>
+                    </tr>
+                    <tr>
+                      <!-- <th scope="row"></th> -->
+                      <td>267400</td>
+                      <td>Fire Department</td>
+                      <td>nevaeh.simmons@example.com</td>
+                      <td>17 Oct, 2020</td>
+                      <td><p class="text-center fail">Failed</p></td>
+                      <td>$28,000</td>
+                    </tr>
+                    <tr>
+                      <!-- <th scope="row"></th> -->
+                      <td>449003</td>
+                      <td>Insurance Carrier</td>
+                      <td>curtis.weaver@example.com</td>
+                      <td>21 Sep, 2020</td>
+                      <td><p class="text-center paid">Paid</p></td>
+                      <td>$10,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+        </div>
+      </div>
+      
+    <!-- </nav> -->
+      
+  </div>
+
+
+  </body>
+</html>
