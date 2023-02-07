@@ -43,85 +43,82 @@ select * from customer;
 select * from orders;
 
 --------------------------------------0---------------------------------------
+--1
 select [name],cust_name,salesman.city from salesman inner join customer  
 on customer.city = salesman.city 
-
+--2
 select order_no, purch_amt, cust_name,city from orders inner join customer 
 on customer.customer_id = orders.customer_id 
 where purch_amt between 500 and 2000;
-
+
+--3
 select cust_name as [Customer Name] , [name] as Salesman from customer c INNER JOIN salesman s
-ON c.salesman_id = s.salesman_id;select c.cust_name as [Customer Name] , s.name as Salesman, c.city as [customer city] ,s.commision as comission from customer c INNER JOIN salesman s
+ON c.salesman_id = s.salesman_id;
+--4
+select c.cust_name as [Customer Name] , s.name as Salesman, c.city as [customer city] ,s.commision as comission from customer c INNER JOIN salesman s
 ON c.salesman_id = s.salesman_id 
 where s.commision > 0.12;
-
+--5
 select c.cust_name as [Customer Name] , s.name as Salesman, c.city as [customer city],s.city as [salesman city]  ,s.commision as comission 
 from customer c INNER JOIN salesman s
 ON c.salesman_id = s.salesman_id 
 where s.commision > 0.12 and c.city != s.city;
 
-
+--6
 select order_no, order_date, purch_amt, cust_name as [Customer Name], grade,  s.name as Salesman , commision 
 from orders o INNER JOIN customer c
 ON o.customer_id=c.customer_id 
 INNER JOIN salesman s ON o.salesman_id=s.salesman_id;
 
----------------------------------------------------------
-SELECT * FROM orders o NATURAL JOIN customer c
-on o.customer_id=c.customer_id 
-NATURAL JOIN salesman s on o.salesman_id=s.salesman_id;
-
-select *
-from orders o INNER JOIN customer c
-ON o.customer_id=c.customer_id 
-INNER JOIN salesman s ON o.salesman_id=s.salesman_id;
-
-select *
-from orders o cross JOIN customer c
-cross JOIN salesman s
-where o.customer_id=c.customer_id 
- and o.salesman_id=s.salesman_id;
-
- ------------------------------------
+--7
+select o.order_no, o.purch_amt, o.customer_id, c.cust_name, c.city, c.grade, o.salesman_id, s.[name], s.city, s.commision
+from orders o
+join customer c on o.customer_id = c.customer_id
+join salesman s on o.salesman_id = s.salesman_id;
 
 
+
+
+ 
+
+ --8
 select c.cust_name as [Customer Name] ,c.city as [customer city] , s.name as Salesman, s.city as [salesman city],c.grade 
 from customer c inner JOIN salesman s
 ON c.salesman_id = s.salesman_id 
 order by c.customer_id asc ;
 
-
+--9
 select c.cust_name as [Customer Name] ,c.city as [customer city] , s.name as Salesman, s.city as [salesman city],c.grade 
 from customer c inner JOIN salesman s
 ON c.salesman_id = s.salesman_id
 where c.grade < 300
 order by c.customer_id asc ;
-
+--10
 select order_no, order_date, purch_amt, cust_name as [Customer Name],c.city as [customer city]
 from customer c left outer JOIN orders o
 ON c.customer_id = o.customer_id
 order by o.order_date asc ;
-
+--11
 select cust_name as [Customer Name],c.city as [customer city],order_no, order_date, purch_amt,s.name as Salesman,s.commision as comission 
 from customer c left outer join  orders o  
 ON o.customer_id=c.customer_id 
 left outer join salesman s ON c.salesman_id=s.salesman_id ;
 
-12
+--12
 select count(name) as oder,s.name from customer c right outer join salesman s 
 ON  s.salesman_id=c.salesman_id
 group by s.name
 order by oder
 
 
-13
+--13
 select s.name as Salesman,cust_name as [Customer Name],c.city,c.grade,order_no, order_date, purch_amt
 from customer c right outer join   salesman s 
 ON s.salesman_id = c.salesman_id 
 left outer join orders o  ON c.customer_id=o.customer_id ;
 
 
-14
+--14
 select s.name as Salesman,cust_name as [Customer Name],c.city,c.grade, 
 o.order_no, o.order_date,o.purch_amt 
 from customer c right outer join salesman s 
@@ -131,30 +128,30 @@ where o.purch_amt > 2000 and grade is not null
 
 
 
-15
+--15
 select s.name as Salesman,cust_name as [Customer Name],purch_amt,grade from customer c right outer join salesman s 
 ON  c.salesman_id=s.salesman_id 
 left outer join orders o  ON c.customer_id=o.customer_id
 where o.purch_amt > 2000 and grade is not null ;
 
 
-16
+--16
 select cust_name as [Customer Name],c.city as [customer city],order_no, order_date, purch_amt
 from customer c full outer join orders o  ON c.customer_id=o.customer_id
 where  grade is not null ;
 
 
-17. 
+--17. 
 select *
 from customer cross join salesman
 
 
-18. 
+--18. 
 select *
 from salesman s cross join  customer c 
 where s.city is not null;
 
-19
+--19
 select *
 from salesman s cross join  customer c 
 where s.city is not null and c.grade is not null;
