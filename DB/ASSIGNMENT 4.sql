@@ -1,5 +1,7 @@
 
 --1
+
+
 alter PROCEDURE que1
 AS
 	SELECT CustomerID, AVG(Freight) as AvgFreight
@@ -15,7 +17,7 @@ exec que1
 UPDATE Orders SET Freight=100 WHERE OrderID = 10248
 SELECT * FROM Orders WHERE OrderID = 10248
 
-create TRIGGER tr_que1_update
+alter TRIGGER tr_que1_update
 ON orders
 INSTEAD OF UPDATE
 AS
