@@ -22,7 +22,18 @@ namespace CI_plateform.Controllers
         {
             return View();
         }
-
+        public IActionResult forgot()
+        {
+            return View();
+        }
+        public IActionResult register()
+        {
+            return View();
+        }
+        public IActionResult resetpass()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();

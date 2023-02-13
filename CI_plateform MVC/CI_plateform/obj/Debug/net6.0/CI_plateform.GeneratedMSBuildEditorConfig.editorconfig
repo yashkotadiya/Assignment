@@ -16,12 +16,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = d:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform
 build_property._RazorSourceGeneratorDebug = 
 
+[d:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Home/forgot.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxmb3Jnb3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [d:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Home/login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [d:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Home/register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxyZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Home/resetpass.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxyZXNldHBhc3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [d:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Shared/Error.cshtml]
