@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\CI_plateform",
-    "\\CI_plateform\\Controllers"
+    "\\CI_plateform\\Controllers",
+    "\\CI_plateform\\data"
   ],
-  "SelectedNode": "\\CI_plateform.sln",
+  "SelectedNode": "\\CI_plateform\\data\\aplicationdbcontext.cs",
   "PreviewInSolutionExplorer": false
 }

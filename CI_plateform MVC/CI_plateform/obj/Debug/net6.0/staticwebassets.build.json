@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EFNMbcTs75PSaVleC3bM7erMv5lbJ0JcmvQEtPRUGJY=",
+  "Hash": "LaWT8syUCDquR5bRRMUKdf9POcbZAPwxyQESgxm1v/s=",
   "Source": "CI_plateform",
   "BasePath": "_content/CI_plateform",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CI_plateform.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform\\wwwroot\\css\\Header.css",
+      "SourceId": "CI_plateform",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform\\wwwroot\\",
+      "BasePath": "_content/CI_plateform",
+      "RelativePath": "css/Header.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Header.css"
     },
     {
       "Identity": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform\\wwwroot\\css\\login.css",

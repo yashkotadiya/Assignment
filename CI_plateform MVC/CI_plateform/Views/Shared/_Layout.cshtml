@@ -3,30 +3,54 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - CI_plateform</title>
+    <title>@ViewData["Title"]  CI_plateform</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/CI_plateform.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Header.css" asp-append-version="true" />
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CI_plateform</a>
+                @*<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CI_plateform</a>*@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
+                    <div>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Stories</a>
+                    </div>
+                    
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown button
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </div>
+                </div>
+                
+
+                <div class="dropdown">
+                    <button class=" dropdown-toggle profile" type="button" data-bs-toggle="dropdown">
+                       
+                        <img src="~/images/user-img.png" class="userProfile">
+                        <span>John Doe</span>
+
+                        @*<img src="./images/dropdown-arrow.svg" class="ic-down">*@
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">My Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Help</a></li>
+                        <li><a class="dropdown-item" href="login.html">Logout</a></li>
                     </ul>
                 </div>
+               
             </div>
         </nav>
     </header>

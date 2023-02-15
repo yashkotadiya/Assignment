@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\CI_plateform.bundle.scp.css"
     },
     {
+      "Id": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform\\wwwroot\\css\\Header.css",
+      "PackagePath": "staticwebassets\\css\\Header.css"
+    },
+    {
       "Id": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform\\wwwroot\\css\\login.css",
       "PackagePath": "staticwebassets\\css\\login.css"
     },
