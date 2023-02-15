@@ -1,49 +1,77 @@
-/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
+.userProfile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
 
-a.navbar-brand {
-    white-space: normal;
-    text-align: center;
-    word-break: break-all;
-  }
+.profile {
+  /* display: flex; */
+  /* align-items: center; */
+  /* padding: 4px 10px; */
+}
+
+.dropdown-toggle {
+  background: #ffffff;
+  border: 1px solid transparent;
+  color: #000000;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.stories {
+  /* margin-left: 12px; */
+  /* padding-left: 100px; */
+}
+
+.profile span {
+  padding: 8px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}
+
+
+@media (max-width:575px) {
+.profile span
+{
+    display: none;
+} 
+.d{
+
+   /* position: absolute; */
+  /*left: 100px;
+  top: 0px; */
+  float: right;
+  position: absolute;
+  /* clear: both; */
+  right: 0;
+  top:7 px;
+}
+.h{
+  min-height: 81px;
+}
+  .userdropdown {
+    /* position: absolute;
   
-  a {
-    color: #0077cc;
+    inset: 0px 0px auto auto;
+    margin: 0px;
+    transform: translate3d(-20px, 7px, 0px); */
+    /* display: flex; */
+    /* margin-right: 100px; */
+    /* transform: translate3d(-70px, 7px, 0px); */
   }
-  
-  .btn-primary {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
+
+
+  .dropdown-menu {
+
+    box-shadow: 0px 0px 14px 0px #00000012;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #3E3E3E;
+    font-weight: 400;
+    min-width: 140px;
   }
-  
-  .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
-  }
-  
-  .border-top {
-    border-top: 1px solid #e5e5e5;
-  }
-  .border-bottom {
-    border-bottom: 1px solid #e5e5e5;
-  }
-  
-  .box-shadow {
-    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-  }
-  
-  button.accept-policy {
-    font-size: 1rem;
-    line-height: inherit;
-  }
-  
-  .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    white-space: nowrap;
-    line-height: 60px;
-  }
-  
+}
