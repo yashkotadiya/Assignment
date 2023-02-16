@@ -12,36 +12,150 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/addons/rating.js"></script>
     <!-- <title>@ViewData["Title"]  CI_plateform</title> -->
     <!-- <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/CI_plateform.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/Header.css" asp-append-version="true" /> -->
+    <!-- <script>
+        $(document).ready(function () {
+            $('#list').click(function (event) { event.preventDefault(); $('#products .item').addClass('list-group-item'); });
+            $('#grid').click(function (event) { event.preventDefault(); $('#products .item').removeClass('list-group-item'); $('#products .item').addClass('grid-group-item'); });
+        });
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#rateMe1').mdbRate();
+        });
+    </script> -->
 </head>
 
-<body style="background-color:aqua;">
+<body>
     <header>
-        <nav
-            class="navbar  navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3  h ">
-            <div class="container-fluid justify-content-between">
+        <nav class="navbar  navbar-expand-md navbar-toggleable-sm navbar-light bg-white  box-shadow   topnav ">
+            <div class="container-fluid justify-content-start">
                 <!-- <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CI_plateform</a> -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <a class="navbar-brand">
+                    <img src="./images/logo.png" alt="logo" class="mw-100" />
+                </a> -->
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <a class="navbar-brand ms-4">
+                    <img src="./images/logo.png" alt="logo" class="ps-0 pe-3" />
+                </a>
+                <!-- <div class="dropdown u1 ">
+                    <button class="btn dropdown-toggle profile" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+
+                        <img src="./images/user-img.png" class="userProfile">
+                        <span>John Doe</span>
+
+                        <img src="./images/drop-down.png" class="ic-down">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end userdropdown">
+                        <li><a class="dropdown-item" href="#">My Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Help</a></li>
+                        <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                    </ul>
+                </div> -->
                 <div class="navbar-collapse collapse  ">
 
-                    <!-- <ul class="navbar-nav flex-grow-1"> -->
-                    <!-- <li class="nav-item"> -->
-                    <a class="nav-link text-dark stories" asp-area="" asp-controller="Home"
-                        asp-action="Index">Stories</a>
-                    </li>
-                    <!-- <li class="nav-item"> -->
-                    <div class="dropdown">
-                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle ps-0 pe-2" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Explore
+                                    <img src="./images/drop-down.png" class="ic-down">
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark pe-2" asp-area="" asp-controller="Home"
+                                asp-action="Index">Stories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark stories me-2" asp-area="" asp-controller="Home"
+                                asp-action="Index">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle ps-0" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Policy
+                                    <img src="./images/drop-down.png" class="ic-down">
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="dropdown u2">
+                    <button class="btn dropdown-toggle profile" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+
+                        <img src="./images/user-img.png" class="userProfile">
+                        <span>John Doe</span>
+
+                        <img src="./images/drop-down.png" class="ic-down">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end userdropdown">
+                        <li><a class="dropdown-item" href="#">My Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Help</a></li>
+                        <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </nav>
+
+        <nav
+            class="navbar navbar-light bg-white navbar-toggleable-md navbar-expand-md border-bottom box-shadow mb-3 secondnav">
+            <div class="container-fluid justify-content-between">
+
+
+                <div class="search-bar">
+                    <i class="fa fa-search"></i>
+                    <input type="search" class="form-control form-input" placeholder="Search Mission...">
+                    <!-- <span class="left-pan"><i class="fa fa-microphone"></i></span> -->
+                </div>
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button> -->
+
+                <div class="row gx-0">
+                    <!-- <ul class="navbar-nav"> -->
+                    <!-- <li class="nav-item col-sm-6"> -->
+                    <div class="dropdown col">
+                        <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Policy
+                            Country
+                            <!-- &nbsp; -->
+                            <img src="./images/drop-down.png" class="ic-down">
                         </button>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
@@ -50,42 +164,383 @@
                         </ul>
                     </div>
                     <!-- </li> -->
-
+                    <!-- <li class="nav-item col-sm-6"> -->
+                    <div class="dropdown col">
+                        <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            City
+                            <!-- &nbsp; -->
+                            <img src="./images/drop-down.png" class="ic-down">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <!-- </li> -->
+                    <!-- <li class="nav-item "> -->
+                    <div class="dropdown col">
+                        <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Theme
+                            <!-- &nbsp; -->
+                            <img src="./images/drop-down.png" class="ic-down">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <!-- </li> -->
+                    <!-- <li class="nav-item "> -->
+                    <div class="dropdown col">
+                        <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Skills
+                            <!-- &nbsp; -->
+                            <img src="./images/drop-down.png" class="ic-down">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <!-- </li> -->
                     <!-- </ul> -->
-
                 </div>
-                <!-- <div>
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item"> -->
-                <div class="dropdown d">
-                    <button class="btn dropdown-toggle profile" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-
-                        <img src="./images/user-img.png" class="userProfile">
-                        <span>John Doe</span>
-
-                        <!-- <img src="./images/drop-down.png" class="ic-down"> -->
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end userdropdown">
-                        <li><a class="dropdown-item" href="#">My Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Help</a></li>
-                        <li><a class="dropdown-item" href="login.html">Logout</a></li>
-                    </ul>
-                </div>
-                <!-- </li>
-                </ul>
-                </div> -->
-
             </div>
-
         </nav>
-        <div class="d-flex" style="background-color: antiquewhite;">
-            1111
-        </div>
-
-
     </header>
 
+    <!-- <nav class="navbar"> -->
+    <div class=" container-fluid justify-content-between d-flex pt-3">
+        <div class="">
+            <h3>Explore 72 Mission</h3>
+
+        </div>
+        <div class="">
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sortby
+
+                    <!-- &nbsp; -->
+                    <img src="./images/drop-down.png" class="ic-down">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <button class="btn btn-primary">
+                <i class="fa-solid fa-grip"></i>
+            </button>
+
+            <i class="fa-solid fa-grip-lines"></i>
+        </div>
+    </div>
+    <!-- </nav> -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <img src="/images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore...</p>
+                        <div class="d-flex justify-content-between">
+                            <p class="review-stat t">Tree Canada</p>
+                            <div class="small-ratings">
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="line-container">
+                            <hr>
+                            <span class="overlapping-text">From 10/01/2019 until 25/02/2019</span>
+                        </div>
+                        <div class="d-flex align-item-center justify-content-between">
+                            <div class="row gx-0">
+                                <div class="col-lg-2"><img src="/images/Seats-left.png"></div>
+                                <div class="col-lg-4">
+                                    <p>10<span>Seats left</span></p>
+                                    <!-- <h>Seats left</h5> -->
+                                </div>
+                                <div class="col-lg-2"><img src="/images/Seats-left.png"></div>
+                                <div class="col-lg-4">
+                                    <p>10<span>Seats left</span></p>
+                                    <!-- <h>Seats left</h5> -->
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-primary ">Apply
+                            <img src="/images/right-arrow.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+            <div class="col-4">
+                <div class="card">
+                    <img src="/images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore...</p>
+                        <div class="d-flex justify-content-between">
+                            <p class="review-stat t">Tree Canada</p>
+                            <div class="small-ratings">
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="line-container">
+                            <hr>
+                            <span class="overlapping-text">From 10/01/2019 until 25/02/2019</span>
+                        </div>
+                        <div class="d-flex align-item-center justify-content-between">
+                            <div class="row gx-0">
+                                <div class="col-lg-2"><img src="/images/Seats-left.png"></div>
+                                <div class="col-lg-4">
+                                    <p>10<span>Seats left</span></p>
+                                    <!-- <h>Seats left</h5> -->
+                                </div>
+                                <div class="col-lg-2"><img src="/images/Seats-left.png"></div>
+                                <div class="col-lg-4">
+                                    <p>10<span>Seats left</span></p>
+                                    <!-- <h>Seats left</h5> -->
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-primary ">Apply
+                            <img src="/images/right-arrow.png">
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="/images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore...</p>
+                        <div class="d-flex justify-content-between">
+                            <p class="review-stat t">Tree Canada</p>
+                            <div class="small-ratings">
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="line-container">
+                            <hr>
+                            <span class="overlapping-text">From 10/01/2019 until 25/02/2019</span>
+                        </div>
+                        <div class="d-flex align-item-center justify-content-between">
+                            <div class="row gx-0">
+                                <div class="col-lg-2"><img src="/images/Seats-left.png"></div>
+                                <div class="col-lg-4">
+                                    <p>10<span>Seats left</span></p>
+                                    <!-- <h>Seats left</h5> -->
+                                </div>
+                                <div class="col-lg-2"><img src="/images/Seats-left.png"></div>
+                                <div class="col-lg-4">
+                                    <p>10<span>Seats left</span></p>
+                                    <!-- <h>Seats left</h5> -->
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-primary ">Apply
+                            <img src="/images/right-arrow.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- This script got from frontendfreecode.com -->
+    <!-- <div class="container">
+        <div class="well well-sm">
+            <strong>Category Title</strong>
+            <div class="btn-group">
+                <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
+                    </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
+                        class="glyphicon glyphicon-th"></span>Grid</a>
+            </div>
+        </div>
+        <div id="products" class="row list-group">
+            <div class="item  col-xs-4 col-lg-4">
+                <div class="thumbnail">
+                    <img class="group list-group-image" src="http://frontendfreecode.com/codes/files/400x250.png"
+                        alt="" />
+                    <div class="caption">
+                        <h4 class="group inner list-group-item-heading">
+                            Product title</h4>
+                        <p class="group inner list-group-item-text">
+                            Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        </p>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <p class="lead">
+                                    $21.000</p>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a class="btn btn-success" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item  col-xs-4 col-lg-4">
+                <div class="thumbnail">
+                    <img class="group list-group-image" src="http://frontendfreecode.com/codes/files/400x250.png"
+                        alt="" />
+                    <div class="caption">
+                        <h4 class="group inner list-group-item-heading">
+                            Product title</h4>
+                        <p class="group inner list-group-item-text">
+                            Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        </p>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <p class="lead">
+                                    $21.000</p>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a class="btn btn-success" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item  col-xs-4 col-lg-4">
+                <div class="thumbnail">
+                    <img class="group list-group-image" src="http://frontendfreecode.com/codes/files/400x250.png"
+                        alt="" />
+                    <div class="caption">
+                        <h4 class="group inner list-group-item-heading">
+                            Product title</h4>
+                        <p class="group inner list-group-item-text">
+                            Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        </p>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <p class="lead">
+                                    $21.000</p>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a class="btn btn-success" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item  col-xs-4 col-lg-4">
+                <div class="thumbnail">
+                    <img class="group list-group-image" src="http://frontendfreecode.com/codes/files/400x250.png"
+                        alt="" />
+                    <div class="caption">
+                        <h4 class="group inner list-group-item-heading">
+                            Product title</h4>
+                        <p class="group inner list-group-item-text">
+                            Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        </p>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <p class="lead">
+                                    $21.000</p>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a class="btn btn-success" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item  col-xs-4 col-lg-4">
+                <div class="thumbnail">
+                    <img class="group list-group-image" src="http://frontendfreecode.com/codes/files/400x250.png"
+                        alt="" />
+                    <div class="caption">
+                        <h4 class="group inner list-group-item-heading">
+                            Product title</h4>
+                        <p class="group inner list-group-item-text">
+                            Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        </p>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <p class="lead">
+                                    $21.000</p>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a class="btn btn-success" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item  col-xs-4 col-lg-4">
+                <div class="thumbnail">
+                    <img class="group list-group-image" src="http://frontendfreecode.com/codes/files/400x250.png"
+                        alt="" />
+                    <div class="caption">
+                        <h4 class="group inner list-group-item-heading">
+                            Product title</h4>
+                        <p class="group inner list-group-item-text">
+                            Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        </p>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <p class="lead">
+                                    $21.000</p>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a class="btn btn-success" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><a style="font-size: 8pt; text-decoration: none" target="_blank" href="http://frontendfreecode.com">Free
+        Frontend</a>
+
+    </div> -->
 
     <!-- 
     <div class="container">
