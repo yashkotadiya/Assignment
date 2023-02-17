@@ -77,6 +77,30 @@
 /* ----------------------------------------------------------------------- */
 /*--------------------------------grid list view---------------------------------*/
 
+.card-title{
+  border: 1px solid lightgray;
+  margin-top: -30px;
+  background: white;
+  width: fit-content;
+  border-radius: 30PX;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-right: 20px;
+  color: gray;
+}
+.DateTime-title{
+  margin-top: -13px;
+  background:white;
+  width: fit-content;
+  border: solid 1px gray;
+  border-radius: 30PX;
+  padding-left: 20px;
+  padding-top: 0px;
+  padding-right: 20px;
+  color: gray;
+}
+
+
 .rating-color {
   color: #fbc634 !important;
 }
@@ -88,36 +112,17 @@
 .line-container {
   position: relative;
 }
-
-.overlapping-text {
-  position: absolute;
-  top: -9px;
-  /* adjust to your desired position */
-  left: 50%;
-  /* center the text horizontally */
-  transform: translateX(-50%);
-  /* adjust to center the text */
-  background-color: white;
-  /* optional, to make the text more visible */
-  padding: 0 10px;
-  /* optional, to add some space around the text */
-
-  width: 80%;
-  border: 2px solid #E8E8E8;
-  border-radius: 18px;
-  font-size: 11px;
-}
-
-.btn-outline-primary {
-  width: 133px;
-  height: 48px;
-  /* UI Properties */
+.applybutton {
+  /* width: fit-content; */
+  /* height: 48px; */
+  padding-left: 20px;
+  padding-right: 20px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border: 2px solid #F88634;
   border-radius: 24px;
   opacity: 1;
   color:#F88634
-}
+} 
 
 
 /*------------------------------------------------------------------------*/

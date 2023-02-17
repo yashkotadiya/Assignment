@@ -133,7 +133,7 @@
         </nav>
 
         <nav
-            class="navbar navbar-light bg-white navbar-toggleable-md navbar-expand-md border-bottom box-shadow mb-3 secondnav">
+            class="navbar navbar-light bg-white navbar-toggleable-md navbar-expand-md border-bottom shadow mb-3 secondnav">
             <div class="container-fluid justify-content-between">
 
 
@@ -215,19 +215,19 @@
         </nav>
     </header>
 
-    <!-- <nav class="navbar"> -->
     <div class=" container-fluid justify-content-between d-flex pt-3">
         <div class="">
             <h3>Explore 72 Mission</h3>
 
         </div>
-        <div class="">
-            <div class="dropdown">
-                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Sortby
+        <div class="row">
+            <div class="dropdown col">
+                <button class="btn dropdown-toggle btn-outline-light border-dark" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Sortby..
 
                     <!-- &nbsp; -->
-                    <img src="./images/drop-down.png" class="ic-down">
+                    <img src="./images/drop-down.png" class="ic-down ms-5">
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end">
                     <li><a class="dropdown-item" href="#">Action</a></li>
@@ -235,312 +235,422 @@
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
             </div>
-            <button class="btn btn-primary">
-                <i class="fa-solid fa-grip"></i>
+            <button class="btn btn-outline-light col">
+                <img src="./images/grid.png">
+            </button>
+            <button class="btn btn-outline-light col ">
+                <img src="./images/list.png">
             </button>
 
-            <i class="fa-solid fa-grip-lines"></i>
         </div>
     </div>
-    <!-- </nav> -->
-    <div class="container-fluid">
+    
+<!-- 
+    <div class="container-fluid mt-4">
         <div class="row">
-            <div class="col-4">
+            <div class="col-lg-4 col-sm-6 col-xs-12 mb-3">
                 <div class="card">
-                    <img src="/images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" class="card-img-top"
+                    <img src="images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" class="card-img-top"
                         alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore...</p>
-                        <div class="d-flex justify-content-between">
-                            <p class="review-stat t">Tree Canada</p>
-                            <div class="small-ratings">
-                                <i class="fa fa-star rating-color"></i>
-                                <i class="fa fa-star rating-color"></i>
-                                <i class="fa fa-star rating-color"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
+
+                        <div class="d-flex justify-content-center">
+                            <p class="card-title">Nutrition</p>
                         </div>
-                        <div class="line-container">
-                            <hr>
-                            <span class="overlapping-text">From 10/01/2019 until 25/02/2019</span>
-                        </div>
-                        <div class="d-flex align-item-center justify-content-between">
-                            <div class="row gx-0">
-                                <div class="col-lg-2"><img src="/images/Seats-left.png"></div>
-                                <div class="col-lg-4">
-                                    <p>10<span>Seats left</span></p>
-                                    <!-- <h>Seats left</h5> -->
-                                </div>
-                                <div class="col-lg-2"><img src="/images/Seats-left.png"></div>
-                                <div class="col-lg-4">
-                                    <p>10<span>Seats left</span></p>
-                                    <!-- <h>Seats left</h5> -->
+                        <div class="m-2">
+                            <h4 class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's
+                                content.</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corrupti nesciunt
+                                mollitia voluptate minus
+                                harum, sequi fugiat quis excepturi ipsum animi quod reiciendis voluptatibus aperiam
+                                alias unde, esse possimus
+                                asperiores?
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <p class="review-stat">Tree Canada</p>
+                                <div class="small-ratings">
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
                                 </div>
                             </div>
                         </div>
-                        <hr>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-outline-primary ">Apply
-                            <img src="/images/right-arrow.png">
-                        </button>
+
+                        <div class="border-top border-bottom">
+                            <div class="d-flex justify-content-center">
+
+                                <p class="DateTime-title">From date to until date</p>
+                            </div>
+
+                            <div class="d-flex flex-wrap justify-content-around">
+                                <div class=" d-flex justify-content-around">
+                                    <img class="w-50 h-50 mt-2 " src="images/Seats-left.png" alt="">
+                                    <div class="mx-2">
+                                        <p class="mb-0">23</p>
+                                        <p class="mt-0">hhhh</p>
+                                    </div>
+                                </div>
+                                <div class=" d-flex justify-content-around">
+                                    <img class="w-50 h-50 mt-2 " src="images/mission.png" alt="">
+                                    <div class="mx-2">
+                                        <p class="mb-0">23</p>
+                                        <p class="mt-0">hhhh</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-3">
+                            <button type="button" class="btn applybutton">Apply
+                                <img src="/images/right-arrow.png">
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- </div> -->
-            <div class="col-4">
+            <div class="col-lg-4 col-sm-6 col-xs-12 mb-3">
                 <div class="card">
-                    <img src="/images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" class="card-img-top"
+                    <img src="images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" class="card-img-top"
                         alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore...</p>
-                        <div class="d-flex justify-content-between">
-                            <p class="review-stat t">Tree Canada</p>
-                            <div class="small-ratings">
-                                <i class="fa fa-star rating-color"></i>
-                                <i class="fa fa-star rating-color"></i>
-                                <i class="fa fa-star rating-color"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+
+                        <div class="d-flex justify-content-center">
+                            <p class="card-title">Nutrition</p>
+                        </div>
+                        <div class="m-2">
+                            <h4 class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's
+                                content.</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corrupti nesciunt
+                                mollitia voluptate minus
+                                harum, sequi fugiat quis excepturi ipsum animi quod reiciendis voluptatibus aperiam
+                                alias unde, esse possimus
+                                asperiores?
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <p class="review-stat">Tree Canada</p>
+                                <div class="small-ratings">
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
                             </div>
                         </div>
-                        <div class="line-container">
-                            <hr>
-                            <span class="overlapping-text">From 10/01/2019 until 25/02/2019</span>
-                        </div>
-                        <div class="d-flex align-item-center justify-content-between">
-                            <div class="row gx-0">
-                                <div class="col-lg-2"><img src="/images/Seats-left.png"></div>
-                                <div class="col-lg-4">
-                                    <p>10<span>Seats left</span></p>
-                                    <!-- <h>Seats left</h5> -->
-                                </div>
-                                <div class="col-lg-2"><img src="/images/Seats-left.png"></div>
-                                <div class="col-lg-4">
-                                    <p>10<span>Seats left</span></p>
-                                    <!-- <h>Seats left</h5> -->
-                                </div>
+
+                        <div class="border-top border-bottom">
+                            <div class="d-flex justify-content-center">
+
+                                <p class="DateTime-title">From date to until date</p>
                             </div>
 
+                            <div class="d-flex flex-wrap justify-content-around">
+                                <div class=" d-flex justify-content-around">
+                                    <img class="w-50 h-50 mt-2 " src="images/Seats-left.png" alt="">
+                                    <div class="mx-2">
+                                        <p class="mb-0">23</p>
+                                        <p class="mt-0">hhhh</p>
+                                    </div>
+                                </div>
+                                <div class=" d-flex justify-content-around">
+                                    <img class="w-50 h-50 mt-2 " src="images/mission.png" alt="">
+                                    <div class="mx-2">
+                                        <p class="mb-0">23</p>
+                                        <p class="mt-0">hhhh</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <hr>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-outline-primary ">Apply
-                            <img src="/images/right-arrow.png">
-                        </button>
+                        <div class="d-flex justify-content-center mt-3">
+                            <button type="button" class="btn applybutton">Apply
+                                <img src="/images/right-arrow.png">
+                            </button>
+                        </div>
                     </div>
                 </div>
-
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-sm-6 col-xs-12 mb-3">
                 <div class="card">
-                    <img src="/images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" class="card-img-top"
+                    <img src="images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" class="card-img-top"
                         alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore...</p>
-                        <div class="d-flex justify-content-between">
-                            <p class="review-stat t">Tree Canada</p>
-                            <div class="small-ratings">
-                                <i class="fa fa-star rating-color"></i>
-                                <i class="fa fa-star rating-color"></i>
-                                <i class="fa fa-star rating-color"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
+
+                        <div class="d-flex justify-content-center">
+                            <p class="card-title">Nutrition</p>
                         </div>
-                        <div class="line-container">
-                            <hr>
-                            <span class="overlapping-text">From 10/01/2019 until 25/02/2019</span>
-                        </div>
-                        <div class="d-flex align-item-center justify-content-between">
-                            <div class="row gx-0">
-                                <div class="col-lg-2"><img src="/images/Seats-left.png"></div>
-                                <div class="col-lg-4">
-                                    <p>10<span>Seats left</span></p>
-                                    <!-- <h>Seats left</h5> -->
-                                </div>
-                                <div class="col-lg-2"><img src="/images/Seats-left.png"></div>
-                                <div class="col-lg-4">
-                                    <p>10<span>Seats left</span></p>
-                                    <!-- <h>Seats left</h5> -->
+                        <div class="m-2">
+                            <h4 class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's
+                                content.</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corrupti nesciunt
+                                mollitia voluptate minus
+                                harum, sequi fugiat quis excepturi ipsum animi quod reiciendis voluptatibus aperiam
+                                alias unde, esse possimus
+                                asperiores?
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <p class="review-stat">Tree Canada</p>
+                                <div class="small-ratings">
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
                                 </div>
                             </div>
                         </div>
-                        <hr>
+
+                        <div class="border-top border-bottom">
+                            <div class="d-flex justify-content-center">
+
+                                <p class="DateTime-title">From date to until date</p>
+                            </div>
+                            <div class="d-flex flex-wrap justify-content-around">
+                                <div class=" d-flex justify-content-around">
+                                    <img class="w-50 h-50 mt-2 " src="images/Seats-left.png" alt="">
+                                    <div class="mx-2">
+                                        <p class="mb-0">23</p>
+                                        <p class="mt-0">hhhh</p>
+                                    </div>
+                                </div>
+                                <div class=" d-flex justify-content-around">
+                                    <img class="w-50 h-50 mt-2 " src="images/mission.png" alt="">
+                                    <div class="mx-2">
+                                        <p class="mb-0">23</p>
+                                        <p class="mt-0">hhhh</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-3">
+                            <button type="button" class="btn applybutton">Apply
+                                <img src="/images/right-arrow.png">
+                            </button>
+                        </div>
                     </div>
-                    <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-outline-primary ">Apply
-                            <img src="/images/right-arrow.png">
-                        </button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xs-12 mb-3">
+                <div class="card">
+                    <img src="images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+
+                        <div class="d-flex justify-content-center">
+                            <p class="card-title">Nutrition</p>
+                        </div>
+                        <div class="m-2">
+                            <h4 class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's
+                                content.</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corrupti nesciunt
+                                mollitia voluptate minus
+                                harum, sequi fugiat quis excepturi ipsum animi quod reiciendis voluptatibus aperiam
+                                alias unde, esse possimus
+                                asperiores?
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <p class="review-stat">Tree Canada</p>
+                                <div class="small-ratings">
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-top border-bottom">
+                            <div class="d-flex justify-content-center">
+
+                                <p class="DateTime-title">From date to until date</p>
+                            </div>
+
+                            <div class="d-flex flex-wrap justify-content-around">
+                                <div class=" d-flex justify-content-around">
+                                    <img class="w-50 h-50 mt-2 " src="images/Seats-left.png" alt="">
+                                    <div class="mx-2">
+                                        <p class="mb-0">23</p>
+                                        <p class="mt-0">hhhh</p>
+                                    </div>
+                                </div>
+                                <div class=" d-flex justify-content-around">
+                                    <img class="w-50 h-50 mt-2 " src="images/mission.png" alt="">
+                                    <div class="mx-2">
+                                        <p class="mb-0">23</p>
+                                        <p class="mt-0">hhhh</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-3">
+                            <button type="button" class="btn applybutton">Apply
+                                <img src="/images/right-arrow.png">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xs-12 mb-3">
+                <div class="card">
+                    <img src="images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+
+                        <div class="d-flex justify-content-center">
+                            <p class="card-title">Nutrition</p>
+                        </div>
+                        <div class="m-2">
+                            <h4 class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's
+                                content.</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corrupti nesciunt
+                                mollitia voluptate minus
+                                harum, sequi fugiat quis excepturi ipsum animi quod reiciendis voluptatibus aperiam
+                                alias unde, esse possimus
+                                asperiores?
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <p class="review-stat">Tree Canada</p>
+                                <div class="small-ratings">
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-top border-bottom">
+                            <div class="d-flex justify-content-center">
+
+                                <p class="DateTime-title">From date to until date</p>
+                            </div>
+
+                            <div class="d-flex flex-wrap justify-content-around">
+                                <div class=" d-flex justify-content-around">
+                                    <img class="w-50 h-50 mt-2 " src="images/Seats-left.png" alt="">
+                                    <div class="mx-2">
+                                        <p class="mb-0">23</p>
+                                        <p class="mt-0">hhhh</p>
+                                    </div>
+                                </div>
+                                <div class=" d-flex justify-content-around">
+                                    <img class="w-50 h-50 mt-2 " src="images/mission.png" alt="">
+                                    <div class="mx-2">
+                                        <p class="mb-0">23</p>
+                                        <p class="mt-0">hhhh</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-3">
+                            <button type="button" class="btn applybutton">Apply
+                                <img src="/images/right-arrow.png">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xs-12 mb-3">
+                <div class="card">
+                    <img src="images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+
+                        <div class="d-flex justify-content-center">
+                            <p class="card-title">Nutrition</p>
+                        </div>
+                        <div class="m-2">
+                            <h4 class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's
+                                content.</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corrupti nesciunt
+                                mollitia voluptate minus
+                                harum, sequi fugiat quis excepturi ipsum animi quod reiciendis voluptatibus aperiam
+                                alias unde, esse possimus
+                                asperiores?
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <p class="review-stat">Tree Canada</p>
+                                <div class="small-ratings">
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-top border-bottom">
+                            <div class="d-flex justify-content-center">
+
+                                <p class="DateTime-title">From date to until date</p>
+                            </div>
+                            <div class="d-flex flex-wrap justify-content-around">
+                                <div class=" d-flex justify-content-around">
+                                    <img class="w-50 h-50 mt-2 " src="images/Seats-left.png" alt="">
+                                    <div class="mx-2">
+                                        <p class="mb-0">23</p>
+                                        <p class="mt-0">hhhh</p>
+                                    </div>
+                                </div>
+                                <div class=" d-flex justify-content-around">
+                                    <img class="w-50 h-50 mt-2 " src="images/mission.png" alt="">
+                                    <div class="mx-2">
+                                        <p class="mb-0">23</p>
+                                        <p class="mt-0">hhhh</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-3">
+                            <button type="button" class="btn applybutton">Apply
+                                <img src="/images/right-arrow.png">
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-
-    <!-- This script got from frontendfreecode.com -->
-    <!-- <div class="container">
-        <div class="well well-sm">
-            <strong>Category Title</strong>
-            <div class="btn-group">
-                <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
-                    </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
-                        class="glyphicon glyphicon-th"></span>Grid</a>
-            </div>
-        </div>
-        <div id="products" class="row list-group">
-            <div class="item  col-xs-4 col-lg-4">
-                <div class="thumbnail">
-                    <img class="group list-group-image" src="http://frontendfreecode.com/codes/files/400x250.png"
-                        alt="" />
-                    <div class="caption">
-                        <h4 class="group inner list-group-item-heading">
-                            Product title</h4>
-                        <p class="group inner list-group-item-text">
-                            Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                        </p>
-                        <div class="row">
-                            <div class="col-xs-12 col-md-6">
-                                <p class="lead">
-                                    $21.000</p>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <a class="btn btn-success" href="#">Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item  col-xs-4 col-lg-4">
-                <div class="thumbnail">
-                    <img class="group list-group-image" src="http://frontendfreecode.com/codes/files/400x250.png"
-                        alt="" />
-                    <div class="caption">
-                        <h4 class="group inner list-group-item-heading">
-                            Product title</h4>
-                        <p class="group inner list-group-item-text">
-                            Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                        </p>
-                        <div class="row">
-                            <div class="col-xs-12 col-md-6">
-                                <p class="lead">
-                                    $21.000</p>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <a class="btn btn-success" href="#">Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item  col-xs-4 col-lg-4">
-                <div class="thumbnail">
-                    <img class="group list-group-image" src="http://frontendfreecode.com/codes/files/400x250.png"
-                        alt="" />
-                    <div class="caption">
-                        <h4 class="group inner list-group-item-heading">
-                            Product title</h4>
-                        <p class="group inner list-group-item-text">
-                            Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                        </p>
-                        <div class="row">
-                            <div class="col-xs-12 col-md-6">
-                                <p class="lead">
-                                    $21.000</p>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <a class="btn btn-success" href="#">Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item  col-xs-4 col-lg-4">
-                <div class="thumbnail">
-                    <img class="group list-group-image" src="http://frontendfreecode.com/codes/files/400x250.png"
-                        alt="" />
-                    <div class="caption">
-                        <h4 class="group inner list-group-item-heading">
-                            Product title</h4>
-                        <p class="group inner list-group-item-text">
-                            Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                        </p>
-                        <div class="row">
-                            <div class="col-xs-12 col-md-6">
-                                <p class="lead">
-                                    $21.000</p>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <a class="btn btn-success" href="#">Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item  col-xs-4 col-lg-4">
-                <div class="thumbnail">
-                    <img class="group list-group-image" src="http://frontendfreecode.com/codes/files/400x250.png"
-                        alt="" />
-                    <div class="caption">
-                        <h4 class="group inner list-group-item-heading">
-                            Product title</h4>
-                        <p class="group inner list-group-item-text">
-                            Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                        </p>
-                        <div class="row">
-                            <div class="col-xs-12 col-md-6">
-                                <p class="lead">
-                                    $21.000</p>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <a class="btn btn-success" href="#">Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item  col-xs-4 col-lg-4">
-                <div class="thumbnail">
-                    <img class="group list-group-image" src="http://frontendfreecode.com/codes/files/400x250.png"
-                        alt="" />
-                    <div class="caption">
-                        <h4 class="group inner list-group-item-heading">
-                            Product title</h4>
-                        <p class="group inner list-group-item-text">
-                            Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                        </p>
-                        <div class="row">
-                            <div class="col-xs-12 col-md-6">
-                                <p class="lead">
-                                    $21.000</p>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <a class="btn btn-success" href="#">Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><a style="font-size: 8pt; text-decoration: none" target="_blank" href="http://frontendfreecode.com">Free
-        Frontend</a>
-
     </div> -->
+
+    <nav aria-label="Page navigation example " class="justify-content-center d-flex">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+
+
+
+
 
     <!-- 
     <div class="container">
