@@ -1,5 +1,108 @@
 ﻿
 @{
-    ViewData["Title"] = "main page";
+    ViewData["Title"] = "Missoin Listing";
 }
+@section Scripts
+    {
+    <script>
+        function opengrid() {
+            var x = document.getElementById("gridview");
+            var y = document.getElementById("listview");
+            if (x.style.display == "block") {
+                // x.style.display="none";
+                y.style.display = "none";
+            }
+            else {
+                x.style.display = "block";
+                y.style.display = "none";
+            }
+        }
+        function openlist() {
+            var y = document.getElementById("gridview");
+            var x = document.getElementById("listview");
+            if (x.style.display == "block") {
+                // x.style.display="none";
+                y.style.display = "none";
+            }
+            else {
+                x.style.display = "block";
+                y.style.display = "none";
+            }
+        }
+    </script>
+   
+}
+    
 
+
+<div class=" container-fluid justify-content-between d-flex pt-3">
+    <div class="">
+        <h3>Explore 72 Mission</h3>
+
+    </div>
+    <div class="row">
+        <div class="dropdown col">
+            <button class="btn dropdown-toggle btn-outline-light border-dark" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                Sortby..
+
+                <!-- &nbsp; -->
+                <img src="~/images/drop-down.png" class="ic-down ms-5">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+        <button class="btn btn-outline-light col" onclick="opengrid()">
+            <img src="~/images/grid.png">
+        </button>
+        <button class="btn btn-outline-light col " onclick="openlist()">
+            <img src="~/images/list.png">
+        </button>
+
+    </div>
+</div>
+
+
+<div class="container-fluid mt-4 gridview" id="gridview">
+    <div class="row">
+        @Html.Partial("Gridcard")
+        @Html.Partial("Gridcard")
+        @Html.Partial("Gridcard")
+        @Html.Partial("Gridcard")
+        @Html.Partial("Gridcard")
+            
+    </div>
+</div>
+
+<div class="container-fluid mt-4 ps-4 pe-4 listview" id="listview" style="display: none;">
+   
+    @Html.Partial("Listcard")
+    @Html.Partial("Listcard")
+    @Html.Partial("Listcard")
+
+</div>
+
+
+
+<nav aria-label="Page navigation example " class="justify-content-center d-flex">
+    <ul class="pagination">
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+            </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+            </a>
+        </li>
+    </ul>
+</nav>

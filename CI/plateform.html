@@ -6,7 +6,6 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/plateform.css">
     <meta charset="utf-8" />
@@ -14,52 +13,40 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="js/addons/rating.js"></script>
-    <!-- <title>@ViewData["Title"]  CI_plateform</title> -->
-    <!-- <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/CI_plateform.styles.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/Header.css" asp-append-version="true" /> -->
-    <!-- <script>
-        $(document).ready(function () {
-            $('#list').click(function (event) { event.preventDefault(); $('#products .item').addClass('list-group-item'); });
-            $('#grid').click(function (event) { event.preventDefault(); $('#products .item').removeClass('list-group-item'); $('#products .item').addClass('grid-group-item'); });
-        });
-
-    </script>-->
     <script>
-        function opengrid(){
+        function opengrid() {
             var x = document.getElementById("gridview");
-            // var y = document.getElementById("listview");
-            if (x.style.display=="block"){
-                x.style.display="none";}
-            else{
+            var y = document.getElementById("listview");
+            if (x.style.display == "block") {
+                // x.style.display="none";
+                y.style.display = "none";
+            }
+            else {
                 x.style.display = "block";
+                y.style.display = "none";
             }
         }
-        function openlist(){
+        function openlist() {
             var y = document.getElementById("gridview");
             var x = document.getElementById("listview");
-            if (x.style.display=="block"){
-                x.style.display="none";
-                
+            if (x.style.display == "block") {
+                // x.style.display="none";
+                y.style.display = "none";
             }
-            else{
+            else {
                 x.style.display = "block";
-                y.style.display="none";
+                y.style.display = "none";
             }
         }
     </script>
+
 </head>
 
 <body>
     <header>
         <nav class="navbar  navbar-expand-md navbar-toggleable-sm navbar-light bg-white  box-shadow   topnav ">
             <div class="container-fluid justify-content-start">
-                <!-- <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CI_plateform</a> -->
-                <!-- <a class="navbar-brand">
-                    <img src="./images/logo.png" alt="logo" class="mw-100" />
-                </a> -->
+
                 <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                     data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -68,21 +55,7 @@
                 <a class="navbar-brand ms-4">
                     <img src="./images/logo.png" alt="logo" class="ps-0 pe-3" />
                 </a>
-                <!-- <div class="dropdown u1 ">
-                    <button class="btn dropdown-toggle profile" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
 
-                        <img src="./images/user-img.png" class="userProfile">
-                        <span>John Doe</span>
-
-                        <img src="./images/drop-down.png" class="ic-down">
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end userdropdown">
-                        <li><a class="dropdown-item" href="#">My Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Help</a></li>
-                        <li><a class="dropdown-item" href="login.html">Logout</a></li>
-                    </ul>
-                </div> -->
                 <div class="navbar-collapse collapse  ">
 
                     <ul class="navbar-nav flex-grow-1">
@@ -233,18 +206,17 @@
         </nav>
     </header>
 
-    <div class=" container-fluid justify-content-between d-flex pt-3">
-        <div class="">
-            <h3>Explore 72 Mission</h3>
+    <div class="container-fluid d-flex justify-content-between  pt-3">
+        <div class="col-md-6">
+            <h3 class="text-muted">Explore <strong class="text-dark"> 72 Mission</strong></h3>
 
         </div>
-        <div class="row">
-            <div class="dropdown col">
+        <div class="d-flex  ">
+            <div class="dropdown">
                 <button class="btn dropdown-toggle btn-outline-light border-dark" type="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     Sortby..
 
-                    <!-- &nbsp; -->
                     <img src="./images/drop-down.png" class="ic-down ms-5">
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end">
@@ -253,28 +225,206 @@
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
             </div>
-            <button class="btn btn-outline-light col" onclick="opengrid()">
-                <img src="./images/grid.png">
-            </button>
-            <button class="btn btn-outline-light col " onclick="openlist()">
-                <img src="./images/list.png">
-            </button>
+
+            <div class="">
+                <button class="btn btn-outline-light " onclick="openlist()">
+                    <img src="./images/list.png">
+                </button>
+                <button class="btn btn-outline-light " onclick="opengrid()">
+                    <img src="./images/grid.png">
+                </button>
+            </div>
+
+
 
         </div>
     </div>
 
 
-     <div class="container-fluid mt-4 gridview" id="gridview">
+    <div class="container-fluid mt-4 gridview" id="gridview">
         <div class="row">
             <div class="col-lg-4 col-sm-6 col-xs-12 mb-3">
                 <div class="card">
-                    <img src="images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" class="card-img-top"
-                        alt="...">
-                    <div class="card-body">
-
+                    <div class="grid-img">
+                        <img src="images/Grow-Trees-On-the-path-to-environment-sustainability-1.png" class="card-img-top"
+                            alt="...">
                         <div class="d-flex justify-content-center">
                             <p class="card-title">Nutrition</p>
                         </div>
+                        <div>
+
+                            <div class="location over-buttons px-3 py-1 ">
+                                <img src="/images/pin.png" />
+                                <span>Toronto</span>
+                            </div>
+                            <div class="add-favourite over-buttons px-3 py-1">
+                                <img src="/images/heart.png" />
+                            </div>
+                            <div class="square over-buttons  px-3 py-1">
+                                <img src="/images/user.png" />
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card-body">
+
+
+                        <div class="m-2">
+                            <h4 class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's
+                                content.</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corrupti nesciunt
+                                mollitia voluptate minus
+                                harum, sequi fugiat quis excepturi ipsum animi quod reiciendis voluptatibus aperiam
+                                alias unde, esse possimus
+                                asperiores?
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <p class="review-stat">Tree Canada</p>
+                                <div class="small-ratings">
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-top border-bottom">
+                            <div class="d-flex justify-content-center">
+
+                                <p class="DateTime-title">From date to until date</p>
+                            </div>
+
+                            <div class="d-flex flex-wrap justify-content-around">
+                                <div class=" d-flex justify-content-around">
+                                    <img class="w-50 h-50 mt-2 " src="images/Seats-left.png" alt="">
+                                    <div class="mx-2">
+                                        <p class="mb-0">23</p>
+                                        <p class="mt-0">hhhh</p>
+                                    </div>
+                                </div>
+                                <div class=" d-flex justify-content-around">
+                                    <img class="w-50 h-50 mt-2 " src="images/mission.png" alt="">
+                                    <div class="mx-2">
+                                        <p class="mb-0">23</p>
+                                        <p class="mt-0">hhhh</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-3">
+                            <button type="button" class="btn applybutton">Apply
+                                <img src="/images/right-arrow.png">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xs-12 mb-3">
+                <div class="card">
+                    <img src="images/Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png" class="card-img-top"
+                        alt="...">
+                    <div class="d-flex justify-content-center">
+                        <p class="card-title">Nutrition</p>
+                    </div>
+                    <div>
+
+                        <div class="location over-buttons px-3 py-1 ">
+                            <img src="/images/pin.png" />
+                            <span>Toronto</span>
+                        </div>
+                        <div class="add-favourite over-buttons px-3 py-1">
+                            <img src="/images/heart.png" />
+                        </div>
+                        <div class="square over-buttons  px-3 py-1">
+                            <img src="/images/user.png" />
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+
+
+                        <div class="m-2">
+                            <h4 class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's
+                                content.</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corrupti nesciunt
+                                mollitia voluptate minus
+                                harum, sequi fugiat quis excepturi ipsum animi quod reiciendis voluptatibus aperiam
+                                alias unde, esse possimus
+                                asperiores?
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <p class="review-stat">Tree Canada</p>
+                                <div class="small-ratings">
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-top border-bottom">
+                            <div class="d-flex justify-content-center">
+
+                                <p class="DateTime-title">From date to until date</p>
+                            </div>
+
+                            <div class="d-flex flex-wrap justify-content-around">
+                                <div class=" d-flex justify-content-around">
+                                    <img class="w-50 h-50 mt-2 " src="images/Seats-left.png" alt="">
+                                    <div class="mx-2">
+                                        <p class="mb-0">23</p>
+                                        <p class="mt-0">hhhh</p>
+                                    </div>
+                                </div>
+                                <div class=" d-flex justify-content-around">
+                                    <img class="w-50 h-50 mt-2 " src="images/mission.png" alt="">
+                                    <div class="mx-2">
+                                        <p class="mb-0">23</p>
+                                        <p class="mt-0">hhhh</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-3">
+                            <button type="button" class="btn applybutton">Apply
+                                <img src="/images/right-arrow.png">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xs-12 mb-3">
+                <div class="card">
+                    <img src="images/Nourish-the-Children-in--African-country-1.png" class="card-img-top"
+                        alt="...">
+                    <div class="d-flex justify-content-center">
+                        <p class="card-title">Nutrition</p>
+                    </div>
+                    <div>
+
+                        <div class="location over-buttons px-3 py-1 ">
+                            <img src="/images/pin.png" />
+                            <span>Toronto</span>
+                        </div>
+                        <div class="add-favourite over-buttons px-3 py-1">
+                            <img src="/images/heart.png" />
+                        </div>
+                        <div class="square over-buttons  px-3 py-1">
+                            <img src="/images/user.png" />
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+
+
                         <div class="m-2">
                             <h4 class="card-text">Some quick example text to build on the card title and make up the
                                 bulk of the card's
@@ -333,11 +483,26 @@
                 <div class="card">
                     <img src="images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" class="card-img-top"
                         alt="...">
+                    <div class="d-flex justify-content-center">
+                        <p class="card-title">Nutrition</p>
+                    </div>
+                    <div>
+
+                        <div class="location over-buttons px-3 py-1 ">
+                            <img src="/images/pin.png" />
+                            <span>Toronto</span>
+                        </div>
+                        <div class="add-favourite over-buttons px-3 py-1">
+                            <img src="/images/heart.png" />
+                        </div>
+                        <div class="square over-buttons  px-3 py-1">
+                            <img src="/images/user.png" />
+                        </div>
+
+                    </div>
                     <div class="card-body">
 
-                        <div class="d-flex justify-content-center">
-                            <p class="card-title">Nutrition</p>
-                        </div>
+
                         <div class="m-2">
                             <h4 class="card-text">Some quick example text to build on the card title and make up the
                                 bulk of the card's
@@ -394,75 +559,28 @@
             </div>
             <div class="col-lg-4 col-sm-6 col-xs-12 mb-3">
                 <div class="card">
-                    <img src="images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" class="card-img-top"
+                    <img src="images/Animal-welfare-&-save-birds-campaign-1.png" class="card-img-top"
                         alt="...">
-                    <div class="card-body">
-
-                        <div class="d-flex justify-content-center">
-                            <p class="card-title">Nutrition</p>
-                        </div>
-                        <div class="m-2">
-                            <h4 class="card-text">Some quick example text to build on the card title and make up the
-                                bulk of the card's
-                                content.</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corrupti nesciunt
-                                mollitia voluptate minus
-                                harum, sequi fugiat quis excepturi ipsum animi quod reiciendis voluptatibus aperiam
-                                alias unde, esse possimus
-                                asperiores?
-                            </p>
-                            <div class="d-flex justify-content-between">
-                                <p class="review-stat">Tree Canada</p>
-                                <div class="small-ratings">
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="border-top border-bottom">
-                            <div class="d-flex justify-content-center">
-
-                                <p class="DateTime-title">From date to until date</p>
-                            </div>
-                            <div class="d-flex flex-wrap justify-content-around">
-                                <div class=" d-flex justify-content-around">
-                                    <img class="w-50 h-50 mt-2 " src="images/Seats-left.png" alt="">
-                                    <div class="mx-2">
-                                        <p class="mb-0">23</p>
-                                        <p class="mt-0">hhhh</p>
-                                    </div>
-                                </div>
-                                <div class=" d-flex justify-content-around">
-                                    <img class="w-50 h-50 mt-2 " src="images/mission.png" alt="">
-                                    <div class="mx-2">
-                                        <p class="mb-0">23</p>
-                                        <p class="mt-0">hhhh</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-center mt-3">
-                            <button type="button" class="btn applybutton">Apply
-                                <img src="/images/right-arrow.png">
-                            </button>
-                        </div>
+                    <div class="d-flex justify-content-center">
+                        <p class="card-title">Nutrition</p>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12 mb-3">
-                <div class="card">
-                    <img src="images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" class="card-img-top"
-                        alt="...">
+                    <div>
+
+                        <div class="location over-buttons px-3 py-1 ">
+                            <img src="/images/pin.png" />
+                            <span>Toronto</span>
+                        </div>
+                        <div class="add-favourite over-buttons px-3 py-1">
+                            <img src="/images/heart.png" />
+                        </div>
+                        <div class="square over-buttons  px-3 py-1">
+                            <img src="/images/user.png" />
+                        </div>
+
+                    </div>
                     <div class="card-body">
 
-                        <div class="d-flex justify-content-center">
-                            <p class="card-title">Nutrition</p>
-                        </div>
+
                         <div class="m-2">
                             <h4 class="card-text">Some quick example text to build on the card title and make up the
                                 bulk of the card's
@@ -519,76 +637,28 @@
             </div>
             <div class="col-lg-4 col-sm-6 col-xs-12 mb-3">
                 <div class="card">
-                    <img src="images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" class="card-img-top"
+                    <img src="images/Plantation-and-Afforestation-programme-1.png" class="card-img-top"
                         alt="...">
-                    <div class="card-body">
-
-                        <div class="d-flex justify-content-center">
-                            <p class="card-title">Nutrition</p>
-                        </div>
-                        <div class="m-2">
-                            <h4 class="card-text">Some quick example text to build on the card title and make up the
-                                bulk of the card's
-                                content.</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corrupti nesciunt
-                                mollitia voluptate minus
-                                harum, sequi fugiat quis excepturi ipsum animi quod reiciendis voluptatibus aperiam
-                                alias unde, esse possimus
-                                asperiores?
-                            </p>
-                            <div class="d-flex justify-content-between">
-                                <p class="review-stat">Tree Canada</p>
-                                <div class="small-ratings">
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="border-top border-bottom">
-                            <div class="d-flex justify-content-center">
-
-                                <p class="DateTime-title">From date to until date</p>
-                            </div>
-
-                            <div class="d-flex flex-wrap justify-content-around">
-                                <div class=" d-flex justify-content-around">
-                                    <img class="w-50 h-50 mt-2 " src="images/Seats-left.png" alt="">
-                                    <div class="mx-2">
-                                        <p class="mb-0">23</p>
-                                        <p class="mt-0">hhhh</p>
-                                    </div>
-                                </div>
-                                <div class=" d-flex justify-content-around">
-                                    <img class="w-50 h-50 mt-2 " src="images/mission.png" alt="">
-                                    <div class="mx-2">
-                                        <p class="mb-0">23</p>
-                                        <p class="mt-0">hhhh</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-center mt-3">
-                            <button type="button" class="btn applybutton">Apply
-                                <img src="/images/right-arrow.png">
-                            </button>
-                        </div>
+                    <div class="d-flex justify-content-center">
+                        <p class="card-title">Nutrition</p>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12 mb-3">
-                <div class="card">
-                    <img src="images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" class="card-img-top"
-                        alt="...">
+                    <div>
+
+                        <div class="location over-buttons px-3 py-1 ">
+                            <img src="/images/pin.png" />
+                            <span>Toronto</span>
+                        </div>
+                        <div class="add-favourite over-buttons px-3 py-1">
+                            <img src="/images/heart.png" />
+                        </div>
+                        <div class="square over-buttons  px-3 py-1">
+                            <img src="/images/user.png" />
+                        </div>
+
+                    </div>
                     <div class="card-body">
 
-                        <div class="d-flex justify-content-center">
-                            <p class="card-title">Nutrition</p>
-                        </div>
+
                         <div class="m-2">
                             <h4 class="card-text">Some quick example text to build on the card title and make up the
                                 bulk of the card's
@@ -617,6 +687,7 @@
 
                                 <p class="DateTime-title">From date to until date</p>
                             </div>
+
                             <div class="d-flex flex-wrap justify-content-around">
                                 <div class=" d-flex justify-content-around">
                                     <img class="w-50 h-50 mt-2 " src="images/Seats-left.png" alt="">
@@ -646,20 +717,38 @@
     </div>
 
     <div class="container-fluid mt-4 ps-4 pe-4 listview" id="listview" style="display: none;">
-        <!-- <div class="row"> -->
-        <div class="row d-flex  mb-3 shadow ">
-            <!-- <div class="card d-flax mb-3"> -->
-            <div class="col-lg-3 col-md-4  col-sm-5 col-xs-12 d-flex justify-content-start  ps-0 pe-0">
-                <img src="images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" class="card-img-top"
-                    alt="...">
 
+
+        <div class=" row d-flex  mb-4">
+
+            <div class="col-lg-3 col-md-4  col-sm-5 col-xs-12 d-block  ps-0 pe-0 list-img">
+                <img src="/images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" class="card-img-top h-100"
+                    alt="...">
+                <div class="d-flex justify-content-center">
+                    <p class="card-title">Nutrition</p>
+
+                </div>
+                <div>
+                    <div class="location over-buttons list-location px-3 py-1 ">
+                        <img src="/images/pin.png" />
+                        <span>Toronto</span>
+                    </div>
+                    <div class="add-favourite over-buttons list-add-favourite px-3 py-1">
+                        <img src="/images/heart.png" />
+                    </div>
+                    <div class="square over-buttons list-square px-3 py-1">
+                        <img src="/images/user.png" />
+                    </div>
+                </div>
             </div>
 
             <div class="card-body col-lg-9 col-md-8 col-sm-7 ">
                 <div class="">
-                    <h5 class="card-text">Some quick example text to build on the card title and make up the
+                    <h5 class="card-text">
+                        Some quick example text to build on the card title and make up the
                         bulk of the card's
-                        content.</h5>
+                        content.
+                    </h5>
                     <p class="font-size">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corrupti nesciunt
                         mollitia voluptate minus
@@ -682,7 +771,8 @@
                             </div>
                         </div>
                         <div class="m-1">
-                            <button type="button" class="btn applybutton">Apply
+                            <button type="button" class="btn applybutton">
+                                Apply
                                 <img src="/images/right-arrow.png">
                             </button>
                         </div>
@@ -692,14 +782,14 @@
 
                         <div class="d-flex justify-content-around mt-4">
                             <div class=" d-flex justify-content-around">
-                                <img class="w-50 h-50 mt-2 " src="images/Seats-left.png" alt="">
+                                <img class="w-50 h-50 mt-2 " src="/images/Seats-left.png" alt="">
                                 <div class="mx-2">
                                     <p class="mb-0">23</p>
                                     <p class="mt-0">hhhh</p>
                                 </div>
                             </div>
                             <div class=" d-flex justify-content-around">
-                                <img class="w-50 h-50 mt-2 " src="images/mission.png" alt="">
+                                <img class="w-50 h-50 mt-2 " src="/images/mission.png" alt="">
                                 <div class="mx-2">
                                     <p class="mb-0">23</p>
                                     <p class="mt-0">hhhh</p>
@@ -710,19 +800,24 @@
                 </div>
             </div>
         </div>
-        <div class="row d-flex  mb-3 shadow ">
-            <!-- <div class="card d-flax mb-3"> -->
-            <div class="col-lg-3 col-md-4  col-sm-5 col-xs-12 d-flex justify-content-start  ps-0 pe-0">
-                <img src="images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" class="card-img-top"
+        <div class="row d-flex  mb-4">
+
+            <div class="col-lg-3 col-md-4  col-sm-5 col-xs-12   ps-0 pe-0">
+                <img src="/images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" class="card-img-top h-100"
                     alt="...">
-
+                <div class="d-flex justify-content-center">
+                    <p class="card-title">Nutrition</p>
+                </div>
             </div>
 
-            <div class="card-body col-lg-9 col-md-8 col-sm-7">
+
+            <div class="card-body col-lg-9 col-md-8 col-sm-7 ">
                 <div class="">
-                    <h5 class="card-text">Some quick example text to build on the card title and make up the
+                    <h5 class="card-text">
+                        Some quick example text to build on the card title and make up the
                         bulk of the card's
-                        content.</h5>
+                        content.
+                    </h5>
                     <p class="font-size">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corrupti nesciunt
                         mollitia voluptate minus
@@ -745,7 +840,8 @@
                             </div>
                         </div>
                         <div class="m-1">
-                            <button type="button" class="btn applybutton">Apply
+                            <button type="button" class="btn applybutton">
+                                Apply
                                 <img src="/images/right-arrow.png">
                             </button>
                         </div>
@@ -755,14 +851,14 @@
 
                         <div class="d-flex justify-content-around mt-4">
                             <div class=" d-flex justify-content-around">
-                                <img class="w-50 h-50 mt-2 " src="images/Seats-left.png" alt="">
+                                <img class="w-50 h-50 mt-2 " src="/images/Seats-left.png" alt="">
                                 <div class="mx-2">
                                     <p class="mb-0">23</p>
                                     <p class="mt-0">hhhh</p>
                                 </div>
                             </div>
                             <div class=" d-flex justify-content-around">
-                                <img class="w-50 h-50 mt-2 " src="images/mission.png" alt="">
+                                <img class="w-50 h-50 mt-2 " src="/images/mission.png" alt="">
                                 <div class="mx-2">
                                     <p class="mb-0">23</p>
                                     <p class="mt-0">hhhh</p>
@@ -773,6 +869,75 @@
                 </div>
             </div>
         </div>
+        <div class="row d-flex  mb-4">
+
+            <div class="col-lg-3 col-md-4  col-sm-5 col-xs-12 d-block  ps-0 pe-0">
+                <img src="/images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" class="card-img-top h-100"
+                    alt="...">
+                <div class="d-flex justify-content-center">
+                    <p class="card-title">Nutrition</p>
+                </div>
+            </div>
+
+            <div class="card-body col-lg-9 col-md-8 col-sm-7 ">
+                <div class="">
+                    <h5 class="card-text">
+                        Some quick example text to build on the card title and make up the
+                        bulk of the card's
+                        content.
+                    </h5>
+                    <p class="font-size">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corrupti nesciunt
+                        mollitia voluptate minus
+                        harum, sequi fugiat quis excepturi ipsum animi quod reiciendis voluptatibus aperiam
+                        alias unde, esse possimus
+                        asperiores?
+                    </p>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <div class="">
+                        <div class="d-flex">
+                            <p class="review-stat me-4">Tree Canada</p>
+                            <div class="small-ratings">
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="m-1">
+                            <button type="button" class="btn applybutton">
+                                Apply
+                                <img src="/images/right-arrow.png">
+                            </button>
+                        </div>
+                    </div>
+                    <div class=" pe-4 ps-4 border-top mt-3">
+                        <p class="DateTime-title">From date to until date</p>
+
+                        <div class="d-flex justify-content-around mt-4">
+                            <div class=" d-flex justify-content-around">
+                                <img class="w-50 h-50 mt-2 " src="/images/Seats-left.png" alt="">
+                                <div class="mx-2">
+                                    <p class="mb-0">23</p>
+                                    <p class="mt-0">hhhh</p>
+                                </div>
+                            </div>
+                            <div class=" d-flex justify-content-around">
+                                <img class="w-50 h-50 mt-2 " src="/images/mission.png" alt="">
+                                <div class="mx-2">
+                                    <p class="mb-0">23</p>
+                                    <p class="mt-0">hhhh</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
 
     </div>
@@ -813,16 +978,20 @@
 
 
 
-    <!-- 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - CI_plateform - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+
+    <footer class="border-top footer d-flex justify-content-between ">
+        <div class="container d-flex col-md-6">
+            <a class="nav-link text-muted  pe-2" asp-area="" asp-controller="Home" asp-action="Privacy">&copy;
+                CI_plateform Privacy Policy</a>
+            <a class="nav-link text-muted pe-2">Cookie Policy</a>
+            <a class="nav-link text-muted pe-2">Terms of Use</a>
+        </div>
+        <div class="col-md-6 d-flex justify-content-">
+            <a class="nav-link text-muted pe-2" asp-area="" asp-controller="" asp-action=""> &copy; Optimy.com <p> All
+                    Right reserved.</p></a>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false) -->
+
 </body>
 
 </html>

@@ -4,12 +4,6 @@
   border-radius: 50%;
 }
 
-.profile {
-  /* display: flex; */
-  /* align-items: center; */
-  /* padding: 4px 10px; */
-}
-
 .dropdown-toggle {
   background: #ffffff;
   border: 1px solid transparent;
@@ -77,20 +71,47 @@
 /* ----------------------------------------------------------------------- */
 /*--------------------------------grid list view---------------------------------*/
 
-.card-title{
-  border: 1px solid lightgray;
-  margin-top: -30px;
+.list-img ,.grid-img{
+  position: relative;
+}
+.card-title {
+
+  margin-top: -15px;
   background: white;
   width: fit-content;
+  height: fit-content;
   border-radius: 30PX;
-  padding-left: 20px;
-  padding-top: 5px;
-  padding-right: 20px;
+  padding: 2px 20px 2px 20px;
   color: gray;
 }
-.DateTime-title{
+
+.location, .add-favourite, .square {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  height: fit-content;
+  width: fit-content;
+  border-radius: 18px;
+  background: #000000 0% 0% no-repeat padding-box;
+  opacity: 0.5;
+  color: white;
+}
+
+
+.add-favourite {
+
+  top: 60px;  
+}
+.square{
+  
+  top: 110px;
+}
+
+
+
+.DateTime-title {
   margin-top: -13px;
-  background:white;
+  background: white;
   width: fit-content;
   border: solid 1px gray;
   border-radius: 30PX;
@@ -112,6 +133,7 @@
 .line-container {
   position: relative;
 }
+
 .applybutton {
   /* width: fit-content; */
   /* height: 48px; */
@@ -121,20 +143,25 @@
   border: 2px solid #F88634;
   border-radius: 24px;
   opacity: 1;
-  color:#F88634
-} 
-.font-size{
+  color: #F88634
+}
+
+.font-size {
   font-size: small;
 }
 
 /*------------------------------------------------------------------------*/
-@media (max-width:767px) {
+@media screen and (max-width:767px) {
   .profile span {
     display: none;
   }
 
-  .u2 {
-    /* display: none; */
+  #gridview {
+    display: block !important;
+  }
+
+  #listview {
+    display: none !important;
   }
 
   .u2 {
@@ -159,18 +186,6 @@
   }
 
 
-  .userdropdown {
-    /* position: absolute;
-  
-    inset: 0px 0px auto auto;
-    margin: 0px;
-    transform: translate3d(-20px, 7px, 0px); */
-    /* display: flex; */
-    /* margin-right: 100px; */
-    /* transform: translate3d(-70px, 7px, 0px); */
-  }
-
-
   .dropdown-menu {
 
     box-shadow: 0px 0px 14px 0px #00000012;
@@ -181,11 +196,4 @@
     font-weight: 400;
     min-width: 140px;
   }
-}
-
-@media (min-width:768px) {
-  .u1 {
-    /* display:none */
-  }
-
 }
