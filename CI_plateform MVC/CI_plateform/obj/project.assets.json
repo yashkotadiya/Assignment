@@ -1046,6 +1046,16 @@
             "rid": "win"
           }
         }
+      },
+      "CI_plateform.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CI_plateform.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CI_plateform.Models.dll": {}
+        }
       }
     }
   },
@@ -3215,10 +3225,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "CI_plateform.Models/1.0.0": {
+      "type": "project",
+      "path": "../CI_plateform.Models/CI_plateform.Models.csproj",
+      "msbuildProject": "../CI_plateform.Models/CI_plateform.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "CI_plateform.Models >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.2"
     ]
@@ -3249,7 +3265,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform.Models\\CI_plateform.Models.csproj": {
+              "projectPath": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform.Models\\CI_plateform.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

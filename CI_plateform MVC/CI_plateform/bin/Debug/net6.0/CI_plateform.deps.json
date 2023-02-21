@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "CI_plateform/1.0.0": {
         "dependencies": {
+          "CI_plateform.Models": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.2"
         },
@@ -610,6 +611,11 @@
             "fileVersion": "5.0.20.51904"
           }
         }
+      },
+      "CI_plateform.Models/1.0.0": {
+        "runtime": {
+          "CI_plateform.Models.dll": {}
+        }
       }
     }
   },
@@ -1052,6 +1058,11 @@
       "sha512": "sha512-c1ho9WU9ZxMZawML+ssPKZfdnrg/OjR3pe0m9v8230z3acqphwvPJqzAkH54xRYm5ntZHGG1EPP3sux9H3qSPg==",
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
+    },
+    "CI_plateform.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

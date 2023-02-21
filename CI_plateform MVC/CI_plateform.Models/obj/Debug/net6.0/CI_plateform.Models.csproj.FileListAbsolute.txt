@@ -1,0 +1,12 @@
+D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform.Models\bin\Debug\net6.0\CI_plateform.Models.deps.json
+D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform.Models\bin\Debug\net6.0\CI_plateform.Models.dll
+D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform.Models\bin\Debug\net6.0\CI_plateform.Models.pdb
+D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform.Models\obj\Debug\net6.0\CI_plateform.Models.csproj.AssemblyReference.cache
+D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform.Models\obj\Debug\net6.0\CI_plateform.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform.Models\obj\Debug\net6.0\CI_plateform.Models.AssemblyInfoInputs.cache
+D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform.Models\obj\Debug\net6.0\CI_plateform.Models.AssemblyInfo.cs
+D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform.Models\obj\Debug\net6.0\CI_plateform.Models.csproj.CoreCompileInputs.cache
+D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform.Models\obj\Debug\net6.0\CI_plateform.Models.dll
+D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform.Models\obj\Debug\net6.0\refint\CI_plateform.Models.dll
+D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform.Models\obj\Debug\net6.0\CI_plateform.Models.pdb
+D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform.Models\obj\Debug\net6.0\ref\CI_plateform.Models.dll

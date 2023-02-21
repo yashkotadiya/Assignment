@@ -16,6 +16,7 @@
 
 .btn:focus {
   box-shadow: none;
+  /* color: #FFFFFF; */
 }
 
 .topnav {
@@ -71,9 +72,11 @@
 /* ----------------------------------------------------------------------- */
 /*--------------------------------grid list view---------------------------------*/
 
-.list-img ,.grid-img{
+.list-img,
+.grid-img {
   position: relative;
 }
+
 .card-title {
 
   margin-top: -15px;
@@ -85,7 +88,9 @@
   color: gray;
 }
 
-.location, .add-favourite, .square {
+.location,
+.add-favourite,
+.square {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -100,10 +105,11 @@
 
 .add-favourite {
 
-  top: 60px;  
+  top: 60px;
 }
-.square{
-  
+
+.square {
+
   top: 110px;
 }
 
@@ -121,6 +127,14 @@
   color: gray;
 }
 
+.progress-bar {
+  background-color: #F88634;
+}
+
+.progress {
+  border-radius: 5px;
+  width: 80px;
+}
 
 .rating-color {
   color: #fbc634 !important;
@@ -186,6 +200,7 @@
   }
 
 
+
   .dropdown-menu {
 
     box-shadow: 0px 0px 14px 0px #00000012;
@@ -196,4 +211,161 @@
     font-weight: 400;
     min-width: 140px;
   }
+}
+
+/*------------------------------------------*/
+/*-------------slideimg-gallary------------*/
+
+
+img {
+  /* vertical-align: middle; */
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.slider-img {
+  /* height: 20%; */
+  position: relative;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* 
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+} */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+/*---------------*/
+.fa-heart-o {
+  color: #757575;
+  cursor: pointer;
+}
+
+.fa-heart {
+  color: red;
+  cursor: pointer;
+}
+.fav-button{
+  border-radius: 30px;
+  border: 2px solid #757575;
+}
+.btn:hover{
+  background-color: white;
+  color: #757575;
+}
+.rating-btn{
+ 
+  margin-top: -13px;
+  background: white;
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+/* ----------Tabs------------------------------- */
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border-color: transparent;
+    color: #505050;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border-bottom: 3px solid #414141;
+    color: #414141;
+    
+    font-weight: 500;
+}
+
+.nav-link {
+    color: #ADADAD;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 14px 18px;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #ADADAD;
+}
+
+.tab-content {
+  margin-top: 25px;
+}
+
+.tab-pane {
+  font-size: 15px;
+  line-height: 24px;
+  color: #3E3E3E;
+}
+
+/* -------------------------------- */
+.volunteer-img{
+  border-radius: 50%;
 }
