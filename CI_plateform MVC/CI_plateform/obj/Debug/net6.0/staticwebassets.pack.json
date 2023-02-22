@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets\\CI_plateform.bundle.scp.css"
     },
     {
-      "Id": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform\\wwwroot\\css\\Header.css",
-      "PackagePath": "staticwebassets\\css\\Header.css"
+      "Id": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform\\wwwroot\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
     },
     {
       "Id": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform\\wwwroot\\css\\login.css",
       "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform\\wwwroot\\css\\plateform.css",
+      "PackagePath": "staticwebassets\\css\\plateform.css"
     },
     {
       "Id": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform\\wwwroot\\css\\site.css",
@@ -447,6 +455,10 @@
     {
       "Id": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform\\wwwroot\\images\\xlsx.png",
       "PackagePath": "staticwebassets\\images\\xlsx.png"
+    },
+    {
+      "Id": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform\\wwwroot\\js\\Plateform.js",
+      "PackagePath": "staticwebassets\\js\\Plateform.js"
     },
     {
       "Id": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform\\wwwroot\\js\\site.js",

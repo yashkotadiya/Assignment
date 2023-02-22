@@ -1,5 +1,78 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿<nav class="navbar  navbar-expand-md navbar-toggleable-sm navbar-light bg-white  box-shadow   topnav ">
+    <div class="container-fluid justify-content-start">
+
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand ms-4">
+            <img src="/images/logo.png" alt="logo" class="ps-0 pe-3" />
+        </a>
+
+        <div class="navbar-collapse collapse  ">
+
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle ps-0 pe-2" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            Explore
+                            <img src="/images/drop-down.png" class="ic-down">
+                        </button>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark pe-2" asp-area="" asp-controller="Home"
+                       asp-action="Index">Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark stories me-2" asp-area="" asp-controller="Home"
+                       asp-action="Index">News</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle ps-0" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            Policy
+                            <img src="/images/drop-down.png" class="ic-down">
+                        </button>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="dropdown u2">
+            <button class="btn dropdown-toggle profile" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+
+                <img src="/images/user-img.png" class="userProfile">
+                <span>John Doe</span>
+
+                <img src="/images/drop-down.png" class="ic-down">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end userdropdown">
+                <li><a class="dropdown-item" href="#">My Profile</a></li>
+                <li><a class="dropdown-item" href="#">Help</a></li>
+                <li><a class="dropdown-item" href="login.html">Logout</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+
+</nav>

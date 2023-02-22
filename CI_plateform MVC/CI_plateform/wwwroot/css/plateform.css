@@ -399,14 +399,6 @@ img {
 /* -------------------------------- */
 .volunteer-img{
   border-radius: 50%;
-  aspect-ratio: 1/1;
   max-width:80px;
   max-height: 80px;
-}
-.comment p{
-  font-size: 14px;
-  color:#757575;
-}
-.comment-container{
-  height: 500px;
 }

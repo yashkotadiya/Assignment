@@ -7,111 +7,30 @@
 
     <title>@ViewData["Title"]</title>
 
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/plateform.css" asp-append-version="true" />
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="~/css/Header.css" asp-append-version="true" />
-    @RenderSection("Scripts",false/*required*/)
+
+    
 </head>
 <body>
-    <header>
-      
-        <nav class="navbar  navbar-expand-md navbar-toggleable-sm navbar-light bg-white  box-shadow   topnav ">
-            <div class="container-fluid justify-content-start">
-                <!-- <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CI_plateform</a> -->
-                <!-- <a class="navbar-brand">
-                    <img src="./images/logo.png" alt="logo" class="mw-100" />
-                </a> -->
-                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
-                    data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand ms-4">
-                    <img src="~/images/logo.png" alt="logo" class="ps-0 pe-3" />
-                </a>
-                
-                <div class="navbar-collapse collapse  ">
+   <header>
 
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle ps-0 pe-2" type="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Explore
-                                    <img src="~/images/drop-down.png" class="ic-down">
-                                </button>
-
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark pe-2" asp-area="" asp-controller="Home"
-                                asp-action="Index">Stories</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark stories me-2" asp-area="" asp-controller="Home"
-                                asp-action="Index">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle ps-0" type="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Policy
-                                    <img src="~/images/drop-down.png" class="ic-down">
-                                </button>
-
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-                <div class="dropdown u2">
-                    <button class="btn dropdown-toggle profile" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-
-                        <img src="~/images/user-img.png" class="userProfile">
-                        <span>John Doe</span>
-
-                        <img src="~/images/drop-down.png" class="ic-down">
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end userdropdown">
-                        <li><a class="dropdown-item" href="#">My Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Help</a></li>
-                        <li><a class="dropdown-item" href="login.html">Logout</a></li>
-                    </ul>
-                </div>
-
-
-            </div>
-
-        </nav>
-
+        @Html.Partial("Topnav")
         @Html.Partial("Secondnav")
  
     </header>
 
-
-
+   
     <div class="container-fluid">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
 
 
 
@@ -121,10 +40,12 @@
             <a class="nav-link text-muted pe-2">Cookie Policy</a>
             <a class="nav-link text-muted pe-2">Terms of Use</a>
         </div>
-        <div>
+        @*<div>
             <a class="nav-link text-muted pe-2" asp-area="" asp-controller=""
                asp-action=""> &copy; Optimy.com <p> All Right reserved.</p></a>
-        </div>
+        </div>*@
     </footer>
 </body>
+
+<script src="~/js/Plateform.js"></script>
 </html>

@@ -9,69 +9,69 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CI_plateform
 build_property.RootNamespace = CI_plateform
-build_property.ProjectDir = d:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform\
+build_property.ProjectDir = D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = d:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform
+build_property.MSBuildProjectDirectory = D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform
 build_property._RazorSourceGeneratorDebug = 
 
-[d:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Home/forgot.cshtml]
+[D:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Home/forgot.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxmb3Jnb3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Home/login.cshtml]
+[D:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Home/login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Home/Privacy.cshtml]
+[D:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Home/register.cshtml]
+[D:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Home/register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxyZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Home/resetpass.cshtml]
+[D:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Home/resetpass.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxyZXNldHBhc3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Main/plateform.cshtml]
+[D:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Main/plateform.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxwbGF0ZWZvcm0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Shared/Error.cshtml]
+[D:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Shared/Gridcard.cshtml]
+[D:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Shared/Gridcard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEdyaWRjYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Shared/Listcard.cshtml]
+[D:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Shared/Listcard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExpc3RjYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Shared/Secondnav.cshtml]
+[D:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Shared/Secondnav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNlY29uZG5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Shared/Topnav.cshtml]
+[D:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Shared/Topnav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFRvcG5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/_ViewImports.cshtml]
+[D:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/_ViewStart.cshtml]
+[D:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Shared/_Layout.cshtml]
+[D:/tatvasoft/6 month/Assignment/CI_plateform MVC/CI_plateform/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-y9f7d5yif4
