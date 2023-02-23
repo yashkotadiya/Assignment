@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿@*<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,100 +10,20 @@
     <link rel="stylesheet" href="css/plateform.css">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="js/bootstrap.bundle.min.js"></script>
+ 
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-</head>
+</head>*@
+@{
+    ViewData["Title"] = "Volunteer";
+}
 
 <body>
-    <header>
-        <nav class="navbar  navbar-expand-md navbar-toggleable-sm navbar-light bg-white shadow  mb-5 topnav ">
-            <div class="container-fluid justify-content-start">
-
-                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
-                    data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand ms-4">
-                    <img src="./images/logo.png" alt="logo" class="ps-0 pe-3" />
-                </a>
-
-                <div class="navbar-collapse collapse  ">
-
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle ps-0 pe-2" type="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Explore
-                                    <img src="./images/drop-down.png" class="ic-down">
-                                </button>
-
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark pe-2" asp-area="" asp-controller="Home"
-                                asp-action="Index">Stories</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark stories me-2" asp-area="" asp-controller="Home"
-                                asp-action="Index">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle ps-0" type="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Policy
-                                    <img src="./images/drop-down.png" class="ic-down">
-                                </button>
-
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-                <div class="dropdown u2">
-                    <button class="btn dropdown-toggle profile" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-
-                        <img src="./images/user-img.png" class="userProfile">
-                        <span>John Doe</span>
-
-                        <img src="./images/drop-down.png" class="ic-down">
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end userdropdown">
-                        <li><a class="dropdown-item" href="#">My Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Help</a></li>
-                        <li><a class="dropdown-item" href="login.html">Logout</a></li>
-                    </ul>
-                </div>
-
-
-            </div>
-
-        </nav>
-
-
-    </header>
-
-
-
-    <div class="container-fluid p-0">
+   
+    <div class="container-fluid p-0 mt-5">
         <div class=" row  border ms-4 me-4 ">
             <div class="col-lg-6 col-md-12 ps-0 pe-0">
                 <div class=" slider-img h-75">
@@ -145,28 +65,28 @@
                 <div class="row gx-1 pt-3 h-25">
                     <div class="column ">
                         <img class="demo cursor "
-                            src="/images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-5.png" style="width:100%"
-                            onclick="currentSlide(1)" alt="The Wood">
+                             src="/images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-5.png" style="width:100%"
+                             onclick="currentSlide(1)" alt="The Wood">
                     </div>
                     <div class="column">
                         <img class="demo cursor" src="/images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-5.png"
-                            style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                             style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
                     </div>
                     <div class="column">
                         <img class="demo cursor" src="/images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-5.png"
-                            style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                             style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
                     </div>
                     <div class="column">
                         <img class="demo cursor" src="/images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-5.png"
-                            style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                             style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
                     </div>
                     <div class="column">
                         <img class="demo cursor" src="/images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-5.png"
-                            style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                             style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
                     </div>
                     <div class="column">
                         <img class="demo cursor" src="/images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-5.png"
-                            style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                             style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
                     </div>
                 </div>
                 <!-- </div> -->
@@ -191,18 +111,18 @@
 
                         <div class="d-flex flex-wrap justify-content-around">
                             <div class=" d-flex">
-                                <img class=" mt-2 goal-button" src="images/Seats-left.png" alt="">
+                                <img class=" mt-2 goal-button" src="/images/Seats-left.png" alt="">
                                 <div class="mx-2">
                                     <p class="mb-0">10</p>
                                     <p class="mt-0">Seats left</p>
                                 </div>
                             </div>
                             <div class=" d-flex">
-                                <img class="mt-2 goal-button" src="images/mission.png" alt="">
+                                <img class="mt-2 goal-button" src="/images/mission.png" alt="">
                                 <div class="mx-2 mt-2">
                                     <div class="progress" style="height: 10px; width: 180px; ">
                                         <div class="progress-bar" role="progressbar" style="width: 70%;"
-                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <p class="mt-0">8000 achieved</p>
                                 </div>
@@ -213,12 +133,14 @@
                         <div class=" mt-2 fav-worker-button">
                             <button class="btn btn-outline-secondary " id=heart>
                                 <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                Add to Favourite</button>
+                                Add to Favourite
+                            </button>
                         </div>
                         <div class=" mt-2 fav-worker-button">
                             <button class="btn btn-outline-secondary ">
-                                <img src="images/add1.png">
-                                Recommend to a Co-Worker</button>
+                                <img src="/images/add1.png">
+                                Recommend to a Co-Worker
+                            </button>
                         </div>
                     </div>
 
@@ -234,29 +156,30 @@
                     </div>
                     <div class="row  d-flex justify-content-center mt-3">
                         <div class="col border pt-1 me-2 mt-2">
-                            <img src="images/pin1.png ">
+                            <img src="/images/pin1.png ">
                             <p class="text-muted mb-0 mt-3">city</p>
                             <p class="mb-1">London</p>
                         </div>
                         <div class="col border pt-1 me-2 mt-2">
-                            <img src="images/web.png">
+                            <img src="/images/web.png">
                             <p class="text-muted mb-0 mt-3">Theme </p>
                             <p class="mb-1">Environment</p>
                         </div>
                         <div class="col border pt-1 me-2 mt-2">
-                            <img src="images/calender.png">
+                            <img src="/images/calender.png">
                             <p class="text-muted mb-0 mt-3">Date</p>
                             <p class="mb-1"> Ongoing Opportunity</p>
                         </div>
                         <div class="col border pt-1 me-2 mt-2">
-                            <img src="images/organization.png">
+                            <img src="/images/organization.png">
                             <p class="text-muted mb-0 mt-3">Organization</p>
                             <p class="mb-1"> CSE Network</p>
                         </div>
                     </div>
 
                     <div class="d-flex justify-content-center mt-3">
-                        <button type="button" class="btn applybutton">Apply Now
+                        <button type="button" class="btn applybutton">
+                            Apply Now
                             <img src="/images/right-arrow.png" class="ms-3">
                         </button>
                     </div>
@@ -273,31 +196,42 @@
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-1" type="button"
-                                role="tab" aria-controls="home" aria-selected="true">Mission </button>
+                                    role="tab" aria-controls="home" aria-selected="true">
+                                Mission
+                            </button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2" type="button"
-                                role="tab" aria-controls="profile" aria-selected="false">Organization</button>
+                                    role="tab" aria-controls="profile" aria-selected="false">
+                                Organization
+                            </button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3" type="button"
-                                role="tab" aria-controls="contact" aria-selected="false">Comments</button>
+                                    role="tab" aria-controls="contact" aria-selected="false">
+                                Comments
+                            </button>
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="tab-1" role="tabpanel">
                             <h3>Introduction</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut
                                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                                 ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. </p>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <p>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
                                 nulla
                                 pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                                 deserunt
-                                mollit anim id est laborum.</p>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                mollit anim id est laborum.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut
                                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                                 ullamco
@@ -307,7 +241,8 @@
                                 cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
                             <h3>Challenge</h3>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut
                                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                                 ullamco
@@ -316,27 +251,33 @@
                                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                                 cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut
                                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                                 ullamco
                                 laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non
-                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
                             <h3>Documents</h3>
                             <div>
                                 <button class="btn btn-outline-secondary fav-button border-light">
-                                    <img src="images/doc.png">
-                                    lorem-ipsum.pdf</button>
+                                    <img src="/images/doc.png">
+                                    lorem-ipsum.pdf
+                                </button>
                                 <button class="btn btn-outline-secondary fav-button border-light">
-                                    <img src="images/doc.png">
-                                    at_vero_eos_accusamus.doc</button>
-                                <button class="btn btn-outline-secondary fav-button border-light">
-                                    <img src="images/doc.png">
-                                    important_doc.xls</button>
+                                    <img src="/images/doc.png">
+                                    at_vero_eos_accusamus.doc
+                                </button>
+                                <button class="btn btn-outline-secondary fav-button border-light" onclick="window.open('https://s3-us-west-2.amazonaws.com/s.cdpn.io/9487/LV_MOTOR_DOCUMENT_OF_INSURANCE.pdf');">
+                                    <img src="/images/doc.png">
+                                    important_doc.xls
+                                </button>
                             </div>
                         </div>
 
-                        <div class="tab-pane fade" id="tab-2" role="tabpanel">It
+                        <div class="tab-pane fade" id="tab-2" role="tabpanel">
+                            It
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                             Ipsum has been the industry's standard
                             dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -353,12 +294,13 @@
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
                             <div class=" mt-3">
-                                <button type="button" class="btn applybutton">Post Comments
+                                <button type="button" class="btn applybutton">
+                                    Post Comments
                                 </button>
                             </div>
                             <div class="mt-3 p-3 border bg-light overflow-auto comment-container">
                                 <div class="border p-2 mb-2 bg-white d-flex ">
-                                    <img src="images/volunteer1.png" class="volunteer-img">
+                                    <img src="/images/volunteer1.png" class="volunteer-img">
                                     <div class="mx-3 comment">
                                         <h6 class="mb-0"> Margaret Walsh </h6>
                                         <p>Monday, Octomber 21, 2019, 4:57 PM </p>
@@ -366,7 +308,7 @@
                                     </div>
                                 </div>
                                 <div class="border p-2 mb-2 bg-white d-flex">
-                                    <img src="images/volunteer1.png" class="volunteer-img">
+                                    <img src="/images/volunteer1.png" class="volunteer-img">
                                     <div class="mx-3 comment">
                                         <h6 class="mb-0"> Margaret Walsh </h6>
                                         <p>Monday, Octomber 21, 2019, 4:57 PM </p>
@@ -374,7 +316,7 @@
                                     </div>
                                 </div>
                                 <div class="border p-2  mb-2 bg-white d-flex">
-                                    <img src="images/volunteer1.png" class="volunteer-img">
+                                    <img src="/images/volunteer1.png" class="volunteer-img">
                                     <div class="mx-3 comment">
                                         <h6 class="mb-0"> Margaret Walsh </h6>
                                         <p>Monday, Octomber 21, 2019, 4:57 PM </p>
@@ -382,7 +324,7 @@
                                     </div>
                                 </div>
                                 <div class="border p-2 mb-2 bg-white d-flex">
-                                    <img src="images/volunteer1.png" class="volunteer-img">
+                                    <img src="/images/volunteer1.png" class="volunteer-img">
                                     <div class="mx-3 comment">
                                         <h6 class="mb-0"> Margaret Walsh </h6>
                                         <p>Monday, Octomber 21, 2019, 4:57 PM </p>
@@ -390,7 +332,7 @@
                                     </div>
                                 </div>
                                 <div class="border p-2 mb-2 bg-white d-flex">
-                                    <img src="images/volunteer1.png" class="volunteer-img">
+                                    <img src="/images/volunteer1.png" class="volunteer-img">
                                     <div class="mx-3 comment">
                                         <h6 class="mb-0"> Margaret Walsh </h6>
                                         <p>Monday, Octomber 21, 2019, 4:57 PM </p>
@@ -408,7 +350,7 @@
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-1"
-                                    type="button" role="tab" aria-controls="home" aria-selected="true">
+                                        type="button" role="tab" aria-controls="home" aria-selected="true">
                                     <h4 class="text-muted">Information</h4>
                                 </button>
                             </li>
@@ -438,52 +380,66 @@
                         </div>
                     </div>
 
-                    <div class="border pe-4 ps-4 mt-4">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <div class="border mt-4">
+                        <ul class="nav nav-tabs  pe-4 ps-4 " id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-1"
-                                    type="button" role="tab" aria-controls="home" aria-selected="true">
+                                        type="button" role="tab" aria-controls="home" aria-selected="true">
                                     <h4 class="text-muted">Recent Volunteers</h4>
                                 </button>
                             </li>
                         </ul>
-                        <div class="row mt-3 text-muted">
+                        <div class="row mt-3 text-muted pe-4 ps-4 ">
                             <div class="col-lg-4 col-md-3 col-sm-4 col-6">
-                                <img src="images/volunteer1.png" class="volunteer-img">
+                                <img src="/images/volunteer1.png" class="volunteer-img">
                                 <p>Andrew Johnson</p>
                             </div>
                             <div class="col-lg-4 col-md-3 col-sm-4 col-6 ">
-                                <img src="images/volunteer2.png" class="volunteer-img">
+                                <img src="/images/volunteer2.png" class="volunteer-img">
                                 <p>Charles Vigue</p>
                             </div>
                             <div class="col-lg-4 col-md-3 col-sm-4 col-6">
-                                <img src="images/volunteer3.png" class="volunteer-img">
+                                <img src="/images/volunteer3.png" class="volunteer-img">
                                 <p>Kathryn Roberts</p>
                             </div>
                             <div class="col-lg-4 col-md-3 col-sm-4 col-6">
-                                <img src="images/volunteer4.png" class="volunteer-img">
+                                <img src="/images/volunteer4.png" class="volunteer-img">
                                 <p>Estella Fowles</p>
                             </div>
                             <div class="col-lg-4 col-md-3 col-sm-4 col-6">
-                                <img src="images/volunteer5.png" class="volunteer-img">
+                                <img src="/images/volunteer5.png" class="volunteer-img">
                                 <p>Rose Lewis</p>
                             </div>
                             <div class="col-lg-4 col-md-3 col-sm-4 col-6">
-                                <img src="images/volunteer6.png" class="volunteer-img">
+                                <img src="/images/volunteer6.png" class="volunteer-img">
                                 <p>Raymond Pabon</p>
                             </div>
                             <div class="col-lg-4 col-md-3 col-sm-4 col-6">
-                                <img src="images/volunteer7.png" class="volunteer-img">
+                                <img src="/images/volunteer7.png" class="volunteer-img">
                                 <p>Kathryn Roberts</p>
                             </div>
                             <div class="col-lg-4 col-md-3 col-sm-4 col-6 ">
-                                <img src="images/volunteer8.png" class="volunteer-img">
+                                <img src="/images/volunteer8.png" class="volunteer-img">
                                 <p>Sarah Santillan</p>
                             </div>
                             <div class="col-lg-4 col-md-3 col-sm-4 col-6">
-                                <img src="images/volunteer9.png" class="volunteer-img">
+                                <img src="/images/volunteer9.png" class="volunteer-img">
                                 <p>Linda Richards</p>
                             </div>
+
+                            
+                        </div>
+                        <div class="row  ms-0 me-0">
+                            <button class="col-2 border">
+                                <img src="~/images/left.png" />
+                            </button>
+
+                            <p class="mb-0 col-8 border text-center">1 - 9 of 25 Recent Volunteers</p>
+
+                            <button class="col-2 border">
+                                <img src="~/images/arrow.png" />
+                            </button>
+
                         </div>
                     </div>
                 </div>
@@ -493,11 +449,11 @@
         <div class="">
             <h3 class="text-muted text-center">Related mission</h3>
             <div class="row container-fluid">
-                <div class="col-lg-4 col-sm-12 col-xs-12 mb-3">
+                <div class="col-lg-4 col-sm-6 col-xs-12 mb-3">
                     <div class="card">
                         <div class="grid-img">
-                            <img src="images/Grow-Trees-On-the-path-to-environment-sustainability-1.png"
-                                class="card-img-top" alt="...">
+                            <img src="/images/Grow-Trees-On-the-path-to-environment-sustainability-1.png"
+                                 class="card-img-top" alt="...">
                             <div class="d-flex justify-content-center">
                                 <p class="card-title">Nutrition</p>
                             </div>
@@ -520,9 +476,11 @@
 
 
                             <div class="m-2">
-                                <h4 class="card-text">Some quick example text to build on the card title and make up the
+                                <h4 class="card-text">
+                                    Some quick example text to build on the card title and make up the
                                     bulk of the card's
-                                    content.</h4>
+                                    content.
+                                </h4>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corrupti nesciunt
                                     mollitia voluptate minus
@@ -550,14 +508,14 @@
 
                                 <div class="d-flex flex-wrap justify-content-around">
                                     <div class=" d-flex justify-content-around">
-                                        <img class="w-50 h-50 mt-2 " src="images/Seats-left.png" alt="">
+                                        <img class="w-50 h-50 mt-2 " src="/images/Seats-left.png" alt="">
                                         <div class="mx-2">
                                             <p class="mb-0">23</p>
                                             <p class="mt-0">hhhh</p>
                                         </div>
                                     </div>
                                     <div class=" d-flex justify-content-around">
-                                        <img class="w-50 h-50 mt-2 " src="images/mission.png" alt="">
+                                        <img class="w-50 h-50 mt-2 " src="/images/mission.png" alt="">
                                         <div class="mx-2">
                                             <p class="mb-0">23</p>
                                             <p class="mt-0">hhhh</p>
@@ -566,18 +524,19 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center mt-3">
-                                <button type="button" class="btn applybutton">Apply
+                                <button type="button" class="btn applybutton">
+                                    Apply
                                     <img src="/images/right-arrow.png">
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-12 col-xs-12 mb-3">
+                <div class="col-lg-4 col-sm-6 col-xs-12 mb-3">
                     <div class="card">
                         <div class="grid-img">
-                            <img src="images/Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png"
-                                class="card-img-top" alt="...">
+                            <img src="/images/Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png"
+                                 class="card-img-top" alt="...">
                             <div class="d-flex justify-content-center">
                                 <p class="card-title">Nutrition</p>
                             </div>
@@ -599,9 +558,11 @@
 
 
                             <div class="m-2">
-                                <h4 class="card-text">Some quick example text to build on the card title and make up the
+                                <h4 class="card-text">
+                                    Some quick example text to build on the card title and make up the
                                     bulk of the card's
-                                    content.</h4>
+                                    content.
+                                </h4>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corrupti nesciunt
                                     mollitia voluptate minus
@@ -629,14 +590,14 @@
 
                                 <div class="d-flex flex-wrap justify-content-around">
                                     <div class=" d-flex justify-content-around">
-                                        <img class="w-50 h-50 mt-2 " src="images/Seats-left.png" alt="">
+                                        <img class="w-50 h-50 mt-2 " src="/images/Seats-left.png" alt="">
                                         <div class="mx-2">
                                             <p class="mb-0">23</p>
                                             <p class="mt-0">hhhh</p>
                                         </div>
                                     </div>
                                     <div class=" d-flex justify-content-around">
-                                        <img class="w-50 h-50 mt-2 " src="images/mission.png" alt="">
+                                        <img class="w-50 h-50 mt-2 " src="/images/mission.png" alt="">
                                         <div class="mx-2">
                                             <p class="mb-0">23</p>
                                             <p class="mt-0">hhhh</p>
@@ -645,18 +606,19 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center mt-3">
-                                <button type="button" class="btn applybutton">Apply
+                                <button type="button" class="btn applybutton">
+                                    Apply
                                     <img src="/images/right-arrow.png">
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-12 col-xs-12 mb-3">
+                <div class="col-lg-4 col-sm-6 col-xs-12 mb-3">
                     <div class="card">
                         <div class="grid-img">
-                            <img src="images/Nourish-the-Children-in--African-country-1.png" class="card-img-top"
-                                alt="...">
+                            <img src="/images/Nourish-the-Children-in--African-country-1.png" class="card-img-top"
+                                 alt="...">
                             <div class="d-flex justify-content-center">
                                 <p class="card-title">Nutrition</p>
                             </div>
@@ -678,9 +640,11 @@
 
 
                             <div class="m-2">
-                                <h4 class="card-text">Some quick example text to build on the card title and make up the
+                                <h4 class="card-text">
+                                    Some quick example text to build on the card title and make up the
                                     bulk of the card's
-                                    content.</h4>
+                                    content.
+                                </h4>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corrupti nesciunt
                                     mollitia voluptate minus
@@ -708,14 +672,14 @@
 
                                 <div class="d-flex flex-wrap justify-content-around">
                                     <div class=" d-flex justify-content-around">
-                                        <img class="w-50 h-50 mt-2 " src="images/Seats-left.png" alt="">
+                                        <img class="w-50 h-50 mt-2 " src="/images/Seats-left.png" alt="">
                                         <div class="mx-2">
                                             <p class="mb-0">23</p>
                                             <p class="mt-0">hhhh</p>
                                         </div>
                                     </div>
                                     <div class=" d-flex justify-content-around">
-                                        <img class="w-50 h-50 mt-2 " src="images/mission.png" alt="">
+                                        <img class="w-50 h-50 mt-2 " src="/images/mission.png" alt="">
                                         <div class="mx-2">
                                             <p class="mb-0">23</p>
                                             <p class="mt-0">hhhh</p>
@@ -724,7 +688,8 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center mt-3">
-                                <button type="button" class="btn applybutton">Apply
+                                <button type="button" class="btn applybutton">
+                                    Apply
                                     <img src="/images/right-arrow.png">
                                 </button>
                             </div>

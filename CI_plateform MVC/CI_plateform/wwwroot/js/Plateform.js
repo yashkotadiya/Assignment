@@ -31,7 +31,7 @@ function openlist()
 
 }
 
-var checkboxes = document.querySelectorAll(".checkbox");
+/*var checkboxes = document.querySelectorAll(".checkbox");
 
 let filtersSection = document.querySelector(".filters-section");
 
@@ -98,3 +98,4 @@ for (var checkbox of checkboxes)
     let elementToBeRemoved = document.getElementById(value);
     filtersSection.removeChild(elementToBeRemoved);
         }
+*/

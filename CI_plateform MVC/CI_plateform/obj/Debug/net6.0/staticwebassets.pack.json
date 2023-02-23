@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
     },
     {
+      "Id": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform\\wwwroot\\css\\example.css",
+      "PackagePath": "staticwebassets\\css\\example.css"
+    },
+    {
       "Id": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform\\wwwroot\\css\\login.css",
       "PackagePath": "staticwebassets\\css\\login.css"
     },

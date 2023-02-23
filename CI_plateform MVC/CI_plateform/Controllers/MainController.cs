@@ -8,5 +8,9 @@ namespace CI_plateform.Controllers
         {
             return View();
         }
+        public IActionResult volunteer()
+        {
+            return View();
+        }
     }
 }
