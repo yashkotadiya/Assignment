@@ -352,3 +352,5 @@ D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform\bin\Debug\net6.0\r
 D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform\bin\Debug\net6.0\CI_plateform.Repository.dll
+D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform\bin\Debug\net6.0\CI_plateform.Repository.pdb

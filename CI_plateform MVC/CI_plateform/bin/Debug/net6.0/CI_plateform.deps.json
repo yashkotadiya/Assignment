@@ -9,6 +9,7 @@
       "CI_plateform/1.0.0": {
         "dependencies": {
           "CI_plateform.Models": "1.0.0",
+          "CI_plateform.Repository": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.3",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.3",
@@ -2427,6 +2428,14 @@
         "runtime": {
           "CI_plateform.Models.dll": {}
         }
+      },
+      "CI_plateform.Repository/1.0.0": {
+        "dependencies": {
+          "CI_plateform.Models": "1.0.0"
+        },
+        "runtime": {
+          "CI_plateform.Repository.dll": {}
+        }
       }
     }
   },
@@ -3711,6 +3720,11 @@
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
     "CI_plateform.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CI_plateform.Repository/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

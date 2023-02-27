@@ -10,3 +10,6 @@ D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform.Repository\obj\Deb
 D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform.Repository\obj\Debug\net6.0\refint\CI_plateform.Repository.dll
 D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform.Repository\obj\Debug\net6.0\CI_plateform.Repository.pdb
 D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform.Repository\obj\Debug\net6.0\ref\CI_plateform.Repository.dll
+D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform.Repository\bin\Debug\net6.0\CI_plateform.Models.dll
+D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform.Repository\bin\Debug\net6.0\CI_plateform.Models.pdb
+D:\tatvasoft\6 month\Assignment\CI_plateform MVC\CI_plateform.Repository\obj\Debug\net6.0\CI_plateform.Repository.csproj.CopyComplete

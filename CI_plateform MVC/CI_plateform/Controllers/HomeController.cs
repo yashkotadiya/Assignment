@@ -2,6 +2,7 @@
 using CI_plateform.Models;
 using CI_plateform.Models.Models;
 using CI_plateform.Models.ViewModels;
+using CI_plateform.Repository.Repository.Interface;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Diagnostics;
@@ -10,19 +11,16 @@ namespace CI_plateform.Controllers
 {
     public class HomeController : Controller
     {
-       /* private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly ILogger<HomeController> _logger;
+        private readonly BaseRepository _userRepository;
+        public HomeController(ILogger<HomeController> logger, BaseRepository userRepository)
         {
             _logger = logger;
-        }*/
-        private readonly CiplateformContext _db;
-
-        public HomeController(CiplateformContext db)
-        {
-            _db = db;
+            _userRepository = userRepository;
         }
 
+        [Route("", Name = "Default")]
+        [Route("Home/login", Name = "login") ]
         public IActionResult login()
         {
             return View();
@@ -39,29 +37,17 @@ namespace CI_plateform.Controllers
         
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult register(RegisterViewModel model)
+       
+        public async Task<IActionResult> register(RegisterViewModel model)
         {
-            if(ModelState.IsValid)
+
+            if (ModelState.IsValid)
             {
-                var user = new User
-                {
-                    FirstName = model.FirstName,
-                    LastName = model.LastName,
-                    Email = model.Email,
-                    PhoneNumber = model.PhoneNumber,
-                    Password = model.Password,
-                    CityId = model.CityId,
-                    CountryId = model.CountryId, 
-                    
-
-                };
-                _db.Add(user);
-                _db.SaveChanges();
-                TempData["SuccessMessage"] = "Registration successful. Please login to continue.";
-                return RedirectToAction("login");
-
+                await _userRepository.CreateUser(model);
+                return RedirectToRoute("login");
             }
 
+            ViewData["ModelState"] = "Model state invalid.";
             return View(model);
         }
 

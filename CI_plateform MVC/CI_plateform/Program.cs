@@ -1,4 +1,6 @@
 using CI_plateform.Models.Models;
+using CI_plateform.Repository.Repository;
+using CI_plateform.Repository.Repository.Interface;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +10,8 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<CiplateformContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("dbConnectionStrings")));
+
+builder.Services.AddScoped<BaseRepository,UserRepository>();
 
 var app = builder.Build();
 

@@ -3707,6 +3707,19 @@
         "runtime": {
           "bin/placeholder/CI_plateform.Models.dll": {}
         }
+      },
+      "CI_plateform.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CI_plateform.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CI_plateform.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CI_plateform.Repository.dll": {}
+        }
       }
     }
   },
@@ -10517,11 +10530,17 @@
       "type": "project",
       "path": "../CI_plateform.Models/CI_plateform.Models.csproj",
       "msbuildProject": "../CI_plateform.Models/CI_plateform.Models.csproj"
+    },
+    "CI_plateform.Repository/1.0.0": {
+      "type": "project",
+      "path": "../CI_plateform.Repository/CI_plateform.Repository.csproj",
+      "msbuildProject": "../CI_plateform.Repository/CI_plateform.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "CI_plateform.Models >= 1.0.0",
+      "CI_plateform.Repository >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.3",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.3",
@@ -10557,6 +10576,9 @@
           "projectReferences": {
             "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform.Models\\CI_plateform.Models.csproj": {
               "projectPath": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform.Models\\CI_plateform.Models.csproj"
+            },
+            "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform.Repository\\CI_plateform.Repository.csproj": {
+              "projectPath": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform.Repository\\CI_plateform.Repository.csproj"
             }
           }
         }

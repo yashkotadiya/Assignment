@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CI_plateform.Models\CI_plateform.Models.csproj" />
+    <ProjectReference Include="..\CI_plateform.Repository\CI_plateform.Repository.csproj" />
   </ItemGroup>
 
 </Project>

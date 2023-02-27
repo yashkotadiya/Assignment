@@ -71,6 +71,65 @@
         }
       }
     },
+    "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform.Repository\\CI_plateform.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform.Repository\\CI_plateform.Repository.csproj",
+        "projectName": "CI_plateform.Repository",
+        "projectPath": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform.Repository\\CI_plateform.Repository.csproj",
+        "packagesPath": "C:\\Users\\Yash\\.nuget\\packages\\",
+        "outputPath": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Yash\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform.Models\\CI_plateform.Models.csproj": {
+                "projectPath": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform.Models\\CI_plateform.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform\\CI_plateform.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -97,6 +156,9 @@
             "projectReferences": {
               "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform.Models\\CI_plateform.Models.csproj": {
                 "projectPath": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform.Models\\CI_plateform.Models.csproj"
+              },
+              "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform.Repository\\CI_plateform.Repository.csproj": {
+                "projectPath": "D:\\tatvasoft\\6 month\\Assignment\\CI_plateform MVC\\CI_plateform.Repository\\CI_plateform.Repository.csproj"
               }
             }
           }
