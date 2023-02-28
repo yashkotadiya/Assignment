@@ -10,6 +10,8 @@ namespace CI_plateform.Repository.Repository.Interface
     public interface BaseRepository
     {
         Task<int> CreateUser(RegisterViewModel model);
+        Task<int> LoginUser(RegisterViewModel model);
+        Task<int> ForgotUserPass(RegisterViewModel model);
       
     }
     

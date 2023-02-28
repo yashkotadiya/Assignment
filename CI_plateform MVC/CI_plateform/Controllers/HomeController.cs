@@ -25,9 +25,41 @@ namespace CI_plateform.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        [Route("Home/login", Name = "login")]
+        public async Task<IActionResult> login(RegisterViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+               
+                int x = await _userRepository.LoginUser(model);
+                if (x==1)
+                {
+                    return RedirectToAction("plateform", "Main");
+                }
+               
+            }
+            return View(model);
+        }
         public IActionResult forgot()
         {
             return View();
+        }
+
+        [HttpPost]
+        [Route("Home/forgot",Name="forgot")]
+        public async Task<IActionResult> forgot(RegisterViewModel model)
+        {
+            if(ModelState.IsValid)
+            {
+                int x = await _userRepository.ForgotUserPass(model);
+                if (x == 1)
+                {
+                    return RedirectToAction("resetpass", "Home");
+                }
+            }
+            return View(model);
         }
         public IActionResult register()
         {

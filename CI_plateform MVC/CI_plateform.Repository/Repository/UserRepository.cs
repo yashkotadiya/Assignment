@@ -36,6 +36,23 @@ namespace CI_plateform.Repository.Repository
 
             return 1;
         }
+
+        public async Task<int> LoginUser(RegisterViewModel model)
+        {
+            var userExists = _context.Users.Any(u => u.Email == model.Email && u.Password == model.Password);
+            await _context.SaveChangesAsync();
+            return userExists ? 1 : 0;
+          
+
+        }
+
+        public async Task<int> ForgotUserPass(RegisterViewModel model)
+        {
+            var userExists = _context.Users.Any(u => u.Email == model.Email);
+            await _context.SaveChangesAsync();
+            return userExists ? 1 : 0;
+              
+        }
     }
     
 }
